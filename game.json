@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 230,
+    "build": 231,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -233,6 +233,46 @@
         "name": "Wall3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/enemy_ranger.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy_ranger.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/range.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\range.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ally_Ranger.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally_Ranger.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Temp_Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Temp_Background.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Temp_Wall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Temp_Wall.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -264,7 +304,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6040838749988932,
+        "zoomFactor": 0.8700232859857491,
         "windowMask": false
       },
       "objectsGroups": [
@@ -276,6 +316,12 @@
             },
             {
               "name": "Enemy1"
+            },
+            {
+              "name": "EnemyRanger"
+            },
+            {
+              "name": "AllyRanger"
             }
           ]
         },
@@ -284,6 +330,9 @@
           "objects": [
             {
               "name": "Ally1"
+            },
+            {
+              "name": "AllyRanger"
             }
           ]
         },
@@ -292,6 +341,9 @@
           "objects": [
             {
               "name": "Enemy1"
+            },
+            {
+              "name": "EnemyRanger"
             }
           ]
         }
@@ -301,37 +353,20 @@
           "name": "Phase",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "Camera",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 768,
-          "layer": "",
-          "locked": true,
-          "name": "NewTileMap",
-          "persistentUuid": "b3a9f324-1534-45f7-a716-5f2b408e92b7",
-          "width": 1280,
-          "x": 0,
-          "y": 0,
-          "zOrder": -5,
-          "numberProperties": [],
-          "stringProperties": [
-            {
-              "name": "tilemap",
-              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":20,\"dimY\":12,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[6,13,13,13,13,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],[6,13,13,13,13,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],[6,13,13,13,13,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],[6,13,13,13,13,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],[6,13,13,13,13,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],[6,13,13,13,13,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],[6,13,13,13,13,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],[6,13,13,13,13,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],[6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],[6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],[6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]]}]}"
-            }
-          ],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "d21e208d-7956-4fb2-9b93-e15485cc120b",
           "width": 0,
@@ -347,7 +382,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "2ddbe602-703d-4abf-8a50-777e120992b9",
           "width": 0,
@@ -363,7 +398,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "2e38835f-69be-4408-ad0f-218d69df670a",
           "width": 0,
@@ -379,7 +414,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "44c7ade1-6074-4b08-b667-5ff4129caddf",
           "width": 0,
@@ -395,7 +430,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "e90b1798-a8d8-4904-bbfd-91c2ae43a1ee",
           "width": 0,
@@ -411,7 +446,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "6d7a1f38-eefb-45be-8539-c928348ce16e",
           "width": 0,
@@ -427,7 +462,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "1b343dff-8b5d-4c6b-b50c-bbf6eab04294",
           "width": 0,
@@ -443,7 +478,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "5d51e316-3b2a-4020-b049-0581240a24d1",
           "width": 0,
@@ -459,7 +494,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "dd858623-1cd8-4b3a-b26c-047adc50bc47",
           "width": 0,
@@ -475,7 +510,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "4e10fdb7-7a22-415a-b164-3005078ace93",
           "width": 0,
@@ -491,7 +526,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "c28123d1-4fd0-4cc4-b7a5-4ce028642fce",
           "width": 0,
@@ -507,7 +542,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "56bf43e3-0639-494d-8b76-3b3e9c4abefa",
           "width": 0,
@@ -523,7 +558,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "3c075767-b383-4928-817b-41e2b12b2588",
           "width": 0,
@@ -539,7 +574,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "d3611303-3340-4ef0-bbef-ae76622c6965",
           "width": 0,
@@ -555,7 +590,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "73d4df30-70f3-44d9-9c71-d9affa68aed9",
           "width": 0,
@@ -571,7 +606,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "385ccc69-b603-45f2-a8d3-8be0e4d7241b",
           "width": 0,
@@ -587,7 +622,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "d292d753-8445-400a-bf40-b48b15b736a3",
           "width": 0,
@@ -603,7 +638,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "4d5f85a1-13e5-4286-918a-7d8b6e588987",
           "width": 0,
@@ -619,7 +654,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "c6ecd947-ed65-4841-aca4-3cad4f455536",
           "width": 0,
@@ -635,7 +670,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "c6e23cd8-8eca-47f7-acb5-f97e0879d2ae",
           "width": 0,
@@ -651,7 +686,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "f557b3fd-14d7-40a0-a975-4c35c762b3cf",
           "width": 0,
@@ -667,7 +702,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "f5b1797c-be45-4b60-bc48-f92aa6884da9",
           "width": 0,
@@ -683,7 +718,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "82ab29bb-375a-423b-a276-f282adccba8b",
           "width": 0,
@@ -699,7 +734,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "3bd854a1-bd9b-4d37-9cbc-b82059de7e89",
           "width": 0,
@@ -715,7 +750,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "3d225800-dca0-4763-bfe9-9783da223282",
           "width": 0,
@@ -731,7 +766,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "a13cadc9-4af9-41d4-bbf2-b1a98b77ae57",
           "width": 0,
@@ -747,7 +782,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "745fd5b7-3d4e-4410-880f-c21c8e0bff14",
           "width": 0,
@@ -763,7 +798,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "2e5997f2-4cd1-4430-b344-391e0b999974",
           "width": 0,
@@ -779,7 +814,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "dcfe7e2a-48c1-4c16-8340-7291ed9ce841",
           "width": 0,
@@ -795,7 +830,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "45b9685c-fe7f-4da6-be97-2edf55eff903",
           "width": 0,
@@ -811,7 +846,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "aa32284c-1c7e-4be1-9eee-7ae8aef8dbde",
           "width": 0,
@@ -827,7 +862,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Under Units Layer",
           "name": "Tile",
           "persistentUuid": "123ee820-3fe3-4735-8658-d562f94e0472",
           "width": 0,
@@ -843,12 +878,12 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Units Layer",
           "name": "Ally1",
           "persistentUuid": "3ec47240-016e-4da8-a787-5ae24b869753",
           "width": 0,
-          "x": 64,
-          "y": 640,
+          "x": -661,
+          "y": 201,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -859,7 +894,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Units Layer",
           "name": "Enemy1",
           "persistentUuid": "efafa7a1-5622-4f86-a0b5-953b0809d4e0",
           "width": 0,
@@ -875,7 +910,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "UI Layer",
           "name": "start",
           "persistentUuid": "12a0a034-6f57-4afa-a765-ebcd53a74b5c",
           "width": 0,
@@ -891,12 +926,12 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Test/Debug layer",
+          "layer": "Test/Debug Layer",
           "name": "PhaseText",
           "persistentUuid": "b1189355-6d8b-4e79-9f31-e4e325453bf4",
           "width": 0,
-          "x": 1144,
-          "y": 19,
+          "x": 1141,
+          "y": 34,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -907,12 +942,12 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Units Layer",
           "name": "Ally1",
           "persistentUuid": "58619341-7d5d-4b13-92c6-7e3cb4fff84d",
           "width": 0,
-          "x": 128,
-          "y": 640,
+          "x": -458,
+          "y": 190,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -923,23 +958,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
-          "name": "Enemy1",
-          "persistentUuid": "56ec5350-5672-4c94-994d-aa1dd251a5a5",
-          "width": 0,
-          "x": 1088,
-          "y": 448,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
+          "layer": "Units Layer",
           "name": "Enemy1",
           "persistentUuid": "7c5ec558-24c6-46a0-afcc-f6bfea7dc7e2",
           "width": 0,
@@ -955,7 +974,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Units Layer",
           "name": "Enemy1",
           "persistentUuid": "75d7d3b0-8ca3-4947-ad20-2ef2dfdd1b67",
           "width": 0,
@@ -971,12 +990,12 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Units Layer",
           "name": "Ally1",
           "persistentUuid": "4b327d93-9ed1-4d03-aa14-6e1f9c93247f",
           "width": 0,
-          "x": 192,
-          "y": 640,
+          "x": -316,
+          "y": 193,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -987,23 +1006,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
-          "name": "Ally1",
-          "persistentUuid": "3dc76f17-a765-4063-a741-13db30ad7c1c",
-          "width": 0,
-          "x": 256,
-          "y": 640,
-          "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
+          "layer": "UI Layer",
           "name": "reset",
           "persistentUuid": "4070ba4e-b571-484c-984a-58548ee46b31",
           "width": 0,
@@ -1016,17 +1019,80 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 722,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
-          "layer": "",
-          "name": "Wall",
-          "persistentUuid": "4bdaee79-417c-4d77-a8d4-b020d51b1824",
-          "width": 59,
-          "x": -13,
-          "y": -2,
-          "zOrder": 17,
+          "layer": "UI Layer",
+          "name": "WallHPText",
+          "persistentUuid": "d996fc0c-bb6c-4d21-9878-df5617f64cf9",
+          "width": 0,
+          "x": 64,
+          "y": 17,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Units Layer",
+          "name": "EnemyRanger",
+          "persistentUuid": "07a2f262-baa3-44c7-85fb-e3021471bf43",
+          "width": 0,
+          "x": 1088,
+          "y": 448,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Units Layer",
+          "name": "AllyRanger",
+          "persistentUuid": "a08a6305-cc21-4899-b4f3-926fcb0db1f4",
+          "width": 0,
+          "x": -393,
+          "y": 343,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Units Layer",
+          "name": "Ally1",
+          "persistentUuid": "10554b0a-a316-4ac1-a770-350ffe530a19",
+          "width": 0,
+          "x": -597,
+          "y": 354,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Units Layer",
+          "name": "Enemy1",
+          "persistentUuid": "14e6f4ba-b9db-46a6-8d88-4105814f0817",
+          "width": 0,
+          "x": 960,
+          "y": 448,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1037,12 +1103,44 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "WallHPText",
-          "persistentUuid": "d996fc0c-bb6c-4d21-9878-df5617f64cf9",
+          "name": "NewSprite",
+          "persistentUuid": "0b7f74f9-3526-44e8-86ab-e9abeec6dd88",
           "width": 0,
-          "x": 52,
-          "y": 5,
-          "zOrder": 18,
+          "x": -896,
+          "y": 0,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "camera",
+          "persistentUuid": "cca49b97-48d5-40db-a5c9-a7bc726eb460",
+          "width": 0,
+          "x": 64,
+          "y": 640,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0.9696969696969697,
+          "height": 720,
+          "layer": "",
+          "name": "Wall",
+          "persistentUuid": "e2054b7e-684a-425c-9482-11fdac320643",
+          "width": 32,
+          "x": 0,
+          "y": 0,
+          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1085,6 +1183,16 @@
               "name": "AttackUsed",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "Range",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "MaxEnemiesHit",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -1161,21 +1269,6 @@
               ]
             }
           ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "NewTileMap",
-          "type": "TileMap::SimpleTileMap",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "atlasImage": "assets\\StartingGroundTilemap.png",
-            "rowCount": 6,
-            "columnCount": 6,
-            "tileSize": 32,
-            "tilesWithHitBox": ""
-          }
         },
         {
           "adaptCollisionMaskAutomatically": true,
@@ -1298,6 +1391,11 @@
               "value": 64
             },
             {
+              "name": "TicksToMove",
+              "type": "number",
+              "value": 1
+            },
+            {
               "name": "Moving",
               "type": "boolean",
               "value": false
@@ -1324,6 +1422,16 @@
             },
             {
               "name": "AttackUsed",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Range",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "TouchedWall",
               "type": "boolean",
               "value": false
             }
@@ -1680,73 +1788,6 @@
           }
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Wall",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "Health",
-              "type": "number",
-              "value": 20
-            }
-          ],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Wall",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Wall3",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 18,
-                            "y": 0
-                          },
-                          {
-                            "x": 48,
-                            "y": 0
-                          },
-                          {
-                            "x": 48,
-                            "y": 64
-                          },
-                          {
-                            "x": 18,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "assetStoreId": "",
           "bold": false,
           "italic": false,
@@ -1787,14 +1828,505 @@
             "characterSize": 20,
             "color": "0;0;0"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "EnemyRanger",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Movement",
+              "type": "number",
+              "value": 64
+            },
+            {
+              "name": "TicksToMove",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "Moving",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Health",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "MaxHealth",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "Energy",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "MaxEnergy",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "AttackUsed",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Range",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "MaxEnemiesHit",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "TouchedWall",
+              "type": "boolean",
+              "value": false
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy_ranger.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Range",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\range.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "AllyRanger",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Health",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "MaxHealth",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "Energy",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "MaxEnergy",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "AttackUsed",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "MaxEnemiesHit",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "Range",
+              "type": "number",
+              "value": 6
+            },
+            {
+              "name": "Grabbed",
+              "type": "boolean",
+              "value": false
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable",
+              "checkCollisionMask": true
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Ally_Ranger.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Temp_Background.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "camera",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Black Square Decorated Button_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Black Square Decorated Button_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Cam",
+              "font": "mononoki-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 26,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Cam",
+                "font": "mononoki-Regular.ttf",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 26,
+                "color": "255;255;255"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Black Square Decorated Button_Pressed.png",
+              "tiled": false,
+              "topMargin": 22,
+              "width": 192
+            }
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Wall",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Health",
+              "type": "number",
+              "value": 20
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Temp_Wall.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
-          {
-            "objectName": "NewTileMap"
-          },
           {
             "objectName": "Tile"
           },
@@ -1802,7 +2334,13 @@
             "objectName": "Ally1"
           },
           {
+            "objectName": "AllyRanger"
+          },
+          {
             "objectName": "Enemy1"
+          },
+          {
+            "objectName": "EnemyRanger"
           },
           {
             "objectName": "HealthBarFilled"
@@ -1817,22 +2355,31 @@
             "objectName": "EnergyBarEmpty"
           },
           {
+            "objectName": "Range"
+          },
+          {
             "objectName": "start"
           },
           {
             "objectName": "reset"
           },
           {
-            "objectName": "PhaseText"
+            "objectName": "camera"
           },
           {
             "objectName": "Wall"
+          },
+          {
+            "objectName": "PhaseText"
           },
           {
             "objectName": "PositionText"
           },
           {
             "objectName": "WallHPText"
+          },
+          {
+            "objectName": "NewSprite"
           }
         ]
       },
@@ -1852,20 +2399,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Phase",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetBooleanObjectVariable"
               },
               "parameters": [
-                "Enemy1",
+                "Enemies",
                 "Moving",
                 "False",
                 ""
@@ -1873,11 +2410,84 @@
             },
             {
               "type": {
-                "value": "ResetTimer"
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Camera",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
               },
               "parameters": [
                 "",
-                "\"WallHitCooldown\""
+                "-",
+                "896",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "-",
+                "896",
+                "\"Under Units Layer\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "-",
+                "896",
+                "\"Units Layer\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "-",
+                "896",
+                "\"Resource Bar Layer\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "-",
+                "896",
+                "\"UI Layer\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "-",
+                "896",
+                "\"Test/Debug Layer\"",
+                ""
               ]
             }
           ]
@@ -1887,6 +2497,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Tile Hover",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1971,7 +2582,7 @@
                     "value": "DraggableBehavior::Dragged"
                   },
                   "parameters": [
-                    "Ally1",
+                    "Allies",
                     "Draggable"
                   ]
                 }
@@ -1982,7 +2593,7 @@
                     "value": "SetBooleanObjectVariable"
                   },
                   "parameters": [
-                    "Ally1",
+                    "Allies",
                     "Grabbed",
                     "True",
                     ""
@@ -1999,7 +2610,7 @@
                     "value": "DraggableBehavior::Dragged"
                   },
                   "parameters": [
-                    "Ally1",
+                    "Allies",
                     "Draggable"
                   ]
                 }
@@ -2026,7 +2637,7 @@
                         "value": "BooleanObjectVariable"
                       },
                       "parameters": [
-                        "Ally1",
+                        "Allies",
                         "Grabbed",
                         "True",
                         ""
@@ -2039,7 +2650,7 @@
                         "value": "MettreX"
                       },
                       "parameters": [
-                        "Ally1",
+                        "Allies",
                         "=",
                         "Tile.X()"
                       ]
@@ -2049,7 +2660,7 @@
                         "value": "MettreY"
                       },
                       "parameters": [
-                        "Ally1",
+                        "Allies",
                         "=",
                         "Tile.Y()"
                       ]
@@ -2059,7 +2670,7 @@
                         "value": "SetBooleanObjectVariable"
                       },
                       "parameters": [
-                        "Ally1",
+                        "Allies",
                         "Grabbed",
                         "False",
                         ""
@@ -2076,12 +2687,89 @@
                         "value": "SetBooleanObjectVariable"
                       },
                       "parameters": [
-                        "Ally1",
+                        "Allies",
                         "Grabbed",
                         "False",
                         ""
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Allies",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Allies",
+                    "Grabbed",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "Range",
+                    "Allies",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Range",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Allies",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Allies",
+                    "Grabbed",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "Range",
+                    "Allies",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Range"
                   ]
                 }
               ]
@@ -2094,7 +2782,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Phases",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2110,6 +2797,31 @@
                 "textR": 0
               },
               "comment": "0 = Build\n1 = Battle"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Phase",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -2141,7 +2853,7 @@
                     "value": "SetBooleanObjectVariable"
                   },
                   "parameters": [
-                    "Enemy1",
+                    "Enemies",
                     "Moving",
                     "False",
                     ""
@@ -2179,7 +2891,7 @@
                     "value": "SetBooleanObjectVariable"
                   },
                   "parameters": [
-                    "Enemy1",
+                    "Enemies",
                     "Moving",
                     "True",
                     ""
@@ -2195,7 +2907,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2279,7 +2990,7 @@
                       "events": [
                         {
                           "type": "BuiltinCommonInstructions::ForEach",
-                          "object": "Enemy1",
+                          "object": "Enemies",
                           "conditions": [],
                           "actions": [],
                           "events": [
@@ -2292,9 +3003,9 @@
                                     "value": "PosX"
                                   },
                                   "parameters": [
-                                    "Enemy1",
+                                    "Enemies",
                                     "=",
-                                    "Ally1.X() + 64"
+                                    "Allies.X() + Enemies.Range * 64"
                                   ]
                                 },
                                 {
@@ -2302,9 +3013,9 @@
                                     "value": "PosY"
                                   },
                                   "parameters": [
-                                    "Enemy1",
+                                    "Enemies",
                                     "=",
-                                    "Ally1.Y()"
+                                    "Allies.Y()"
                                   ]
                                 }
                               ],
@@ -2314,7 +3025,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy1",
+                                    "Enemies",
                                     "Moving",
                                     "False",
                                     ""
@@ -2326,8 +3037,8 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "Ally1",
-                                    "Enemy1"
+                                    "Allies",
+                                    "Enemies"
                                   ]
                                 }
                               ]
@@ -2336,14 +3047,14 @@
                         },
                         {
                           "type": "BuiltinCommonInstructions::ForEach",
-                          "object": "Enemy1",
+                          "object": "Enemies",
                           "conditions": [
                             {
                               "type": {
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy1",
+                                "Enemies",
                                 "Moving",
                                 "True",
                                 ""
@@ -2356,9 +3067,9 @@
                                 "value": "MettreX"
                               },
                               "parameters": [
-                                "Enemy1",
+                                "Enemies",
                                 "-",
-                                "Enemy1.Movement"
+                                "Enemies.Movement"
                               ]
                             }
                           ]
@@ -2367,18 +3078,76 @@
                       "parameters": []
                     },
                     {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Ally Attack"
+                    },
+                    {
                       "type": "BuiltinCommonInstructions::ForEach",
-                      "object": "Ally1",
+                      "object": "Allies",
+                      "conditions": [],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Enemies",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PosX"
+                              },
+                              "parameters": [
+                                "Allies",
+                                ">=",
+                                "Enemies.X() - Allies.Range * 64"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PosY"
+                              },
+                              "parameters": [
+                                "Allies",
+                                "=",
+                                "Enemies.Y()"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "LinkedObjects::LinkObjects"
+                              },
+                              "parameters": [
+                                "",
+                                "Allies",
+                                "Enemies"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "Allies",
                       "conditions": [
                         {
                           "type": {
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Ally1",
+                            "Allies",
                             "Energy",
                             ">=",
-                            "Ally1.MaxEnergy"
+                            "Allies.MaxEnergy"
                           ]
                         },
                         {
@@ -2387,9 +3156,113 @@
                           },
                           "parameters": [
                             "",
-                            "Enemy1",
-                            "Ally1",
+                            "Enemies",
+                            "Allies",
                             ""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Enemies",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PosX"
+                              },
+                              "parameters": [
+                                "Allies",
+                                ">=",
+                                "Enemies.X() - Allies.Range * 64"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "Allies",
+                                "Energy",
+                                "=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "Enemies",
+                                "Health",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "Allies",
+                                "AttackUsed",
+                                "True",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Enemy Attack"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "Enemies",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberObjectVariable"
+                          },
+                          "parameters": [
+                            "Enemies",
+                            "Energy",
+                            ">=",
+                            "Enemies.MaxEnergy"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "Allies",
+                            "Enemies",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PosX"
+                          },
+                          "parameters": [
+                            "Allies",
+                            ">=",
+                            "Enemies.X() - Enemies.Range * 64"
                           ]
                         }
                       ],
@@ -2399,7 +3272,7 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "Ally1",
+                            "Enemies",
                             "Energy",
                             "=",
                             "0"
@@ -2410,7 +3283,7 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "Enemy1",
+                            "Allies",
                             "Health",
                             "-",
                             "1"
@@ -2421,7 +3294,7 @@
                             "value": "SetBooleanObjectVariable"
                           },
                           "parameters": [
-                            "Ally1",
+                            "Enemies",
                             "AttackUsed",
                             "True",
                             "1"
@@ -2430,67 +3303,16 @@
                       ]
                     },
                     {
-                      "type": "BuiltinCommonInstructions::ForEach",
-                      "object": "Enemy1",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "NumberObjectVariable"
-                          },
-                          "parameters": [
-                            "Enemy1",
-                            "Energy",
-                            ">=",
-                            "Enemy1.MaxEnergy"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "LinkedObjects::PickObjectsLinkedTo"
-                          },
-                          "parameters": [
-                            "",
-                            "Ally1",
-                            "Enemy1",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetNumberObjectVariable"
-                          },
-                          "parameters": [
-                            "Enemy1",
-                            "Energy",
-                            "=",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberObjectVariable"
-                          },
-                          "parameters": [
-                            "Ally1",
-                            "Health",
-                            "-",
-                            "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetBooleanObjectVariable"
-                          },
-                          "parameters": [
-                            "Enemy1",
-                            "AttackUsed",
-                            "True",
-                            "1"
-                          ]
-                        }
-                      ]
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Remove unit when hp <= 0"
                     },
                     {
                       "type": "BuiltinCommonInstructions::ForEach",
@@ -2559,6 +3381,17 @@
                           },
                           "parameters": [
                             "",
+                            "Range",
+                            "Units",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
                             "PositionText",
                             "Units",
                             ""
@@ -2605,6 +3438,15 @@
                             "value": "Delete"
                           },
                           "parameters": [
+                            "Range",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
                             "PositionText",
                             ""
                           ]
@@ -2619,6 +3461,18 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Unit Energy"
                     },
                     {
                       "type": "BuiltinCommonInstructions::ForEach",
@@ -2703,8 +3557,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
-          "name": "Resource Bars",
+          "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -2731,7 +3584,7 @@
                     "HealthBarEmpty",
                     "Units.X() + 2",
                     "Units.Y() - 16",
-                    "\"Resource Bar layer\""
+                    "\"Resource Bar Layer\""
                   ]
                 },
                 {
@@ -2743,7 +3596,7 @@
                     "HealthBarFilled",
                     "Units.X() + 2",
                     "Units.Y() - 16",
-                    "\"Resource Bar layer\""
+                    "\"Resource Bar Layer\""
                   ]
                 },
                 {
@@ -2755,7 +3608,7 @@
                     "EnergyBarEmpty",
                     "Units.X() + 2",
                     "Units.Y() - 9",
-                    "\"Resource Bar layer\""
+                    "\"Resource Bar Layer\""
                   ]
                 },
                 {
@@ -2767,7 +3620,7 @@
                     "EnergyBarFilled",
                     "Units.X() + 2",
                     "Units.Y() - 9",
-                    "\"Resource Bar layer\""
+                    "\"Resource Bar Layer\""
                   ]
                 },
                 {
@@ -2808,6 +3661,95 @@
                     "",
                     "EnergyBarFilled",
                     "Units"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "HealthBarEmpty"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "HealthBarFilled"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "EnergyBarEmpty"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "EnergyBarFilled"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Allies",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Range",
+                    "Allies.X() + 64",
+                    "Allies.Y()",
+                    "\"Under Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "Range",
+                    "Allies"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                  },
+                  "parameters": [
+                    "Range",
+                    "Resizable",
+                    "=",
+                    "Allies.Range * 64 + 64"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Range"
                   ]
                 }
               ]
@@ -2863,6 +3805,17 @@
                 },
                 {
                   "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "Range",
+                    "Units",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "MettreXY"
                   },
                   "parameters": [
@@ -2911,6 +3864,18 @@
                 },
                 {
                   "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Range",
+                    "=",
+                    "Units.X()",
+                    "=",
+                    "Units.Y()"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ResizableCapability::ResizableBehavior::SetWidth"
                   },
                   "parameters": [
@@ -2931,6 +3896,149 @@
                     "Units.Energy / Units.MaxEnergy * EnergyBarEmpty.Width()"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Phase",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarFilled"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Units",
+                        "Health",
+                        "<",
+                        "Units.MaxHealth"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Phase",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "HealthBarEmpty",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "HealthBarFilled",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Units",
+                        "Energy",
+                        ">",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Phase",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "EnergyBarEmpty",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ],
@@ -2941,7 +4049,197 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
+          "name": "Wall Logic",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Enemies",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Enemies",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "TouchedWall",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "TouchedWall",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "-",
+                    "Enemies.Variable(Health)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "HealthBarEmpty",
+                    "Enemies",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "HealthBarFilled",
+                    "Enemies",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "EnergyBarEmpty",
+                    "Enemies",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "EnergyBarFilled",
+                    "Enemies",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "PositionText",
+                    "Enemies",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "HealthBarEmpty",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "HealthBarFilled",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "EnergyBarEmpty",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "EnergyBarFilled",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "PositionText",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "WallHPText",
+                    "Text",
+                    "=",
+                    "\"Health: \" + ToString(Wall.Variable(Health))"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "name": "TESTING/DEBUG",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3160,6 +4458,262 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "camera",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Camera",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"TEST\"",
+                    ">=",
+                    ".5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "-",
+                    "896",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "-",
+                    "896",
+                    "\"Under Units Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "-",
+                    "896",
+                    "\"Units Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "-",
+                    "896",
+                    "\"Resource Bar Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "-",
+                    "896",
+                    "\"UI Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "-",
+                    "896",
+                    "\"Test/Debug Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Camera",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"TEST\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "camera",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Camera",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"TEST\"",
+                    ">=",
+                    ".5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "+",
+                    "896",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "+",
+                    "896",
+                    "\"Under Units Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "+",
+                    "896",
+                    "\"Units Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "+",
+                    "896",
+                    "\"Resource Bar Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "+",
+                    "896",
+                    "\"UI Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "+",
+                    "896",
+                    "\"Test/Debug Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Camera",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"TEST\""
+                  ]
+                }
+              ]
+            },
+            {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -3194,7 +4748,7 @@
                     "PositionText",
                     "Units.X() + 2",
                     "Units.Y() - 27",
-                    "\"Test/Debug layer\""
+                    "\"Test/Debug Layer\""
                   ]
                 },
                 {
@@ -3252,85 +4806,6 @@
             }
           ],
           "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "Wall Logic",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Wall",
-                    "Enemy1",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CompareTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"WallHitCooldown\"",
-                    ">",
-                    "0.65"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Wall",
-                    "Health",
-                    "-",
-                    "Enemy1.Variable(MaxHealth)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"WallHitCooldown\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "WallHPText",
-                    "Text",
-                    "=",
-                    "\"Health: \" + ToString(Wall.Variable(Health))"
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
         }
       ],
       "layers": [
@@ -3373,7 +4848,7 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "Resource Bar layer",
+          "name": "Under Units Layer",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
@@ -3406,9 +4881,108 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "Test/Debug layer",
+          "name": "Units Layer",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Resource Bar Layer",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Test/Debug Layer",
           "renderingType": "",
           "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI Layer",
+          "renderingType": "",
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
