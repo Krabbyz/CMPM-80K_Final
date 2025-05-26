@@ -461,6 +461,56 @@
         "name": "80K Final - Basic Ranged Unit - Idle2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/menuMusic.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\menuMusic.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/battleMusic.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\battleMusic.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/meleeHit.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\meleeHit.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/deathSound.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\deathSound.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/wallHit.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\wallHit.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1061,7 +1111,7 @@
               },
               "parameters": [
                 "",
-                "menuMusic.mp3",
+                "assets\\menuMusic.mp3",
                 "yes",
                 "40",
                 ""
@@ -3549,7 +3599,7 @@
               },
               "parameters": [
                 "",
-                "menuMusic.mp3",
+                "assets\\menuMusic.mp3",
                 "yes",
                 "40",
                 ""
@@ -7819,7 +7869,7 @@
               },
               "parameters": [
                 "",
-                "battleMusic.mp3",
+                "assets\\battleMusic.mp3",
                 "yes",
                 "40",
                 ""
@@ -8756,7 +8806,7 @@
                               },
                               "parameters": [
                                 "",
-                                "meleeHit.wav",
+                                "assets\\meleeHit.wav",
                                 "",
                                 "80",
                                 ""
@@ -8874,7 +8924,7 @@
                               },
                               "parameters": [
                                 "",
-                                "meleeHit.wav",
+                                "assets\\meleeHit.wav",
                                 "",
                                 "80",
                                 ""
@@ -9099,7 +9149,7 @@
                           },
                           "parameters": [
                             "",
-                            "deathSound.wav",
+                            "assets\\deathSound.wav",
                             "",
                             "40",
                             ""
@@ -9877,7 +9927,7 @@
                   },
                   "parameters": [
                     "",
-                    "wallHit.wav",
+                    "assets\\wallHit.wav",
                     "",
                     "80",
                     ""
