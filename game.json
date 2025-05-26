@@ -353,6 +353,76 @@
         "name": "assets\\Dot.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "../../../Downloads/meleeHit.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\meleeHit.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "meleeHit.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "meleeHit.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "meleeHit2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "meleeHit2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "deathSound.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "deathSound.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "wallHit.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "wallHit.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "menuMusic.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "menuMusic.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "battleMusic.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "battleMusic.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -793,7 +863,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\nAaron Tan",
+          "string": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\nAaron Tan\n\nAll sound effects used in this \ngame are from Freesound.org",
           "font": "",
           "textAlignment": "center",
           "characterSize": 32,
@@ -816,7 +886,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\nAaron Tan",
+            "text": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\nAaron Tan\n\nAll sound effects used in this \ngame are from Freesound.org",
             "font": "",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
@@ -934,6 +1004,33 @@
         ]
       },
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "menuMusic.mp3",
+                "1",
+                "40",
+                ""
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -3406,6 +3503,18 @@
               },
               "parameters": [
                 "Level6"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "menuMusic.mp3",
+                "1",
+                "40",
+                ""
               ]
             }
           ],
@@ -7665,6 +7774,18 @@
                 "+",
                 "1000"
               ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "battleMusic.mp3",
+                "yes",
+                "40",
+                ""
+              ]
             }
           ]
         },
@@ -8092,7 +8213,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Phases",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8591,6 +8711,18 @@
                                 "True",
                                 "1"
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "meleeHit.wav",
+                                "",
+                                "80",
+                                ""
+                              ]
                             }
                           ]
                         }
@@ -8696,6 +8828,18 @@
                                 "AttackUsed",
                                 "True",
                                 "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "meleeHit.wav",
+                                "",
+                                "80",
+                                ""
                               ]
                             }
                           ]
@@ -8908,6 +9052,18 @@
                           },
                           "parameters": [
                             "Units",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "deathSound.wav",
+                            "",
+                            "40",
                             ""
                           ]
                         }
@@ -9491,7 +9647,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Wall Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9676,6 +9831,18 @@
                     "EnemiesLeft",
                     "-",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "wallHit.wav",
+                    "",
+                    "80",
+                    ""
                   ]
                 }
               ]
