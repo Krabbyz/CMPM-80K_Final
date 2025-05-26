@@ -413,6 +413,54 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "80K Final - Basic Melee Unit - Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "80K Final - Basic Melee Unit - Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "80K Final - Basic Ranged Unit - Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "80K Final - Basic Ranged Unit - Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "80K Final - Basic Melee Enemy - Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "80K Final - Basic Melee Enemy - Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "80K Final - Basic Ranged Enemy - Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "80K Final - Basic Ranged Enemy - Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "80K Final - Basic Melee Unit - Idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "80K Final - Basic Melee Unit - Idle2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "80K Final - Basic Ranged Unit - Idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "80K Final - Basic Ranged Unit - Idle2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -4111,7 +4159,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3797121001948024,
+        "zoomFactor": 0.5653158055126445,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5722,7 +5770,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Idle",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -5731,7 +5779,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\StartingObstacle.png",
+                      "image": "80K Final - Basic Melee Unit - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5971,7 +6019,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\red_dot.png",
+                      "image": "80K Final - Basic Melee Enemy - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5987,19 +6035,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
+                            "x": 7,
                             "y": 0
                           },
                           {
-                            "x": 64,
+                            "x": 61,
                             "y": 0
                           },
                           {
-                            "x": 64,
+                            "x": 61,
                             "y": 64
                           },
                           {
-                            "x": 0,
+                            "x": 7,
                             "y": 64
                           }
                         ]
@@ -6432,7 +6480,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\enemy_ranger.png",
+                      "image": "80K Final - Basic Ranged Enemy - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6448,19 +6496,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
+                            "x": 1,
                             "y": 0
                           },
                           {
-                            "x": 64,
+                            "x": 63,
                             "y": 0
                           },
                           {
-                            "x": 64,
+                            "x": 63,
                             "y": 64
                           },
                           {
-                            "x": 0,
+                            "x": 1,
                             "y": 64
                           }
                         ]
@@ -6609,7 +6657,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Ranger.png",
+                      "image": "80K Final - Basic Ranged Unit - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6625,20 +6673,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 1
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 62,
+                            "y": 1
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 62,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 3,
+                            "y": 63
                           }
                         ]
                       ]
@@ -6880,7 +6928,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\StartingObstacle.png",
+                      "image": "80K Final - Basic Melee Unit - Idle2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6896,20 +6944,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 5,
+                            "y": 1
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 56,
+                            "y": 1
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 56,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 5,
+                            "y": 63
                           }
                         ]
                       ]
@@ -7025,7 +7073,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Ranger.png",
+                      "image": "80K Final - Basic Ranged Unit - Idle2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -7041,20 +7089,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 1
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 62,
+                            "y": 1
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 62,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 3,
+                            "y": 63
                           }
                         ]
                       ]
