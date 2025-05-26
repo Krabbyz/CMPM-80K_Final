@@ -355,16 +355,6 @@
         "userAdded": false
       },
       {
-        "file": "../../../Downloads/meleeHit.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "..\\..\\..\\Downloads\\meleeHit.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
         "file": "meleeHit.wav",
         "kind": "audio",
         "metadata": "",
@@ -1024,7 +1014,7 @@
               "parameters": [
                 "",
                 "menuMusic.mp3",
-                "1",
+                "yes",
                 "40",
                 ""
               ]
@@ -3512,7 +3502,7 @@
               "parameters": [
                 "",
                 "menuMusic.mp3",
-                "1",
+                "yes",
                 "40",
                 ""
               ]
