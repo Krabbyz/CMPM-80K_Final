@@ -1892,11 +1892,22 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6455105703311546,
+        "zoomFactor": 0.7619362677197677,
         "windowMask": false
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "LevelSelectScreenUp",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "LevelSelected",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -2893,7 +2904,7 @@
           "customSize": true,
           "depth": 49,
           "height": 56,
-          "layer": "Flags",
+          "layer": "UI",
           "name": "SettingsButton",
           "persistentUuid": "ae66f736-3436-43bc-b2ea-43fac0e91b2f",
           "width": 68,
@@ -2910,7 +2921,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "NewSprite",
+          "name": "SettingsBackground",
           "persistentUuid": "8302acd7-1b1e-4420-b5cb-77564562f363",
           "width": 0,
           "x": 1280,
@@ -3028,6 +3039,88 @@
           "x": 1831,
           "y": 562,
           "zOrder": 52,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "LevelSelectBackground",
+          "persistentUuid": "754fb9f3-469a-4818-ac50-b69ae5e484ca",
+          "width": 0,
+          "x": 360,
+          "y": 32.5,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "BattleButton",
+          "persistentUuid": "7d86368d-5966-4f55-9a2e-149c6e307858",
+          "width": 0,
+          "x": 544,
+          "y": 530,
+          "zOrder": 53,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 400,
+          "layer": "UI",
+          "name": "LevelText",
+          "persistentUuid": "59b220e9-cff4-4a45-a81a-511fc11d9f58",
+          "width": 400,
+          "x": 440,
+          "y": 162,
+          "zOrder": 54,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 44,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "XButton",
+          "persistentUuid": "213ddd00-02c6-403d-b862-da24fa39d996",
+          "width": 49,
+          "x": 852,
+          "y": 54,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 58,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "LevelNameText",
+          "persistentUuid": "fcacbf1a-cde5-483f-bb8a-842b103b6663",
+          "width": 400,
+          "x": 440,
+          "y": 105,
+          "zOrder": 56,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4268,7 +4361,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "NewSprite",
+          "name": "SettingsBackground",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -4789,79 +4882,418 @@
               "width": 192
             }
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "LevelSelectBackground",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Paper2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 560,
+                            "y": 0
+                          },
+                          {
+                            "x": 560,
+                            "y": 655
+                          },
+                          {
+                            "x": 0,
+                            "y": 655
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "BattleButton",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Black Square Decorated Button_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Black Square Decorated Button_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Battle",
+              "font": "mononoki-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 26,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Battle",
+                "font": "mononoki-Regular.ttf",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 26,
+                "color": "255;255;255"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Black Square Decorated Button_Pressed.png",
+              "tiled": false,
+              "topMargin": 22,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "LevelText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Greetings General, urgent word came from the Eastern Kingdom of [Name]. Their capital is under siege and calls for our aid. Rally your forces and prepare to march east, for our allies’ fate hangs in the balance. Our King has supplied you with his finest dwarven warriors to bolster your ranks.\n\nGood luck, and may victory be ours!",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Greetings General, urgent word came from the Eastern Kingdom of [Name]. Their capital is under siege and calls for our aid. Rally your forces and prepare to march east, for our allies’ fate hangs in the balance. Our King has supplied you with his finest dwarven warriors to bolster your ranks.\n\nGood luck, and may victory be ours!",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+          "name": "XButton",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Black Square Decorated Button_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Black Square Decorated Button_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "X",
+              "font": "mononoki-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 26,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "X",
+                "font": "mononoki-Regular.ttf",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 26,
+                "color": "255;255;255"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Black Square Decorated Button_Pressed.png",
+              "tiled": false,
+              "topMargin": 22,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": true,
+          "name": "LevelNameText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Outside The Dwarven City Gates",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 25,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": true,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Outside The Dwarven City Gates",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 25,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
+            "folderName": "Settings",
+            "children": [
+              {
+                "objectName": "SettingsBackground"
+              },
+              {
+                "objectName": "SettingsText"
+              },
+              {
+                "objectName": "SFXText"
+              },
+              {
+                "objectName": "MusicText"
+              },
+              {
+                "objectName": "SFXSlider"
+              },
+              {
+                "objectName": "MusicSlider"
+              },
+              {
+                "objectName": "ReturnButton"
+              },
+              {
+                "objectName": "BackButton"
+              }
+            ]
+          },
+          {
+            "folderName": "Flags and dot",
+            "children": [
+              {
+                "objectName": "Level1"
+              },
+              {
+                "objectName": "Level2"
+              },
+              {
+                "objectName": "Level3"
+              },
+              {
+                "objectName": "Level4"
+              },
+              {
+                "objectName": "Level5"
+              },
+              {
+                "objectName": "Level6"
+              },
+              {
+                "objectName": "Level1Win"
+              },
+              {
+                "objectName": "Level2Win"
+              },
+              {
+                "objectName": "Level3Win"
+              },
+              {
+                "objectName": "Level4Win"
+              },
+              {
+                "objectName": "Level5Win"
+              },
+              {
+                "objectName": "Level6Win"
+              },
+              {
+                "objectName": "Dot"
+              }
+            ]
+          },
+          {
             "objectName": "Background"
-          },
-          {
-            "objectName": "Level1"
-          },
-          {
-            "objectName": "Level2"
-          },
-          {
-            "objectName": "Level3"
-          },
-          {
-            "objectName": "Level4"
-          },
-          {
-            "objectName": "Level5"
-          },
-          {
-            "objectName": "Level6"
-          },
-          {
-            "objectName": "Level1Win"
-          },
-          {
-            "objectName": "Level2Win"
-          },
-          {
-            "objectName": "Level3Win"
-          },
-          {
-            "objectName": "Level4Win"
-          },
-          {
-            "objectName": "Level5Win"
-          },
-          {
-            "objectName": "Level6Win"
-          },
-          {
-            "objectName": "Dot"
           },
           {
             "objectName": "SettingsButton"
           },
           {
-            "objectName": "BackButton"
+            "objectName": "LevelSelectBackground"
           },
           {
-            "objectName": "ReturnButton"
+            "objectName": "BattleButton"
           },
           {
-            "objectName": "NewSprite"
+            "objectName": "XButton"
           },
           {
-            "objectName": "SettingsText"
+            "objectName": "LevelText"
           },
           {
-            "objectName": "SFXText"
-          },
-          {
-            "objectName": "MusicText"
-          },
-          {
-            "objectName": "SFXSlider"
-          },
-          {
-            "objectName": "MusicSlider"
+            "objectName": "LevelNameText"
           }
         ]
       },
@@ -5553,12 +5985,44 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Scene"
+                    "value": "SetBooleanVariable"
                   },
                   "parameters": [
-                    "",
-                    "\"Level 1\"",
+                    "LevelSelectScreenUp",
+                    "True",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelSelected",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelNameText",
+                    "Text",
+                    "=",
+                    "\"Outside the Dwarven City Gates\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelText",
+                    "Text",
+                    "=",
+                    "\"Greetings General, urgent word came from the Eastern Kingdom of [Name]. Their capital is under siege and calls for our aid. Rally your forces and prepare to march east, for our allies’ fate hangs in the balance. Our King has supplied you with his finest dwarven warriors to equip you on your journey.\n\nGood luck, and may victory be ours!\""
                   ]
                 }
               ]
@@ -5579,12 +6043,44 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Scene"
+                    "value": "SetBooleanVariable"
                   },
                   "parameters": [
-                    "",
-                    "\"Level 2\"",
+                    "LevelSelectScreenUp",
+                    "True",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelSelected",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelNameText",
+                    "Text",
+                    "=",
+                    "\"[river name] River Crossing\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelText",
+                    "Text",
+                    "=",
+                    "\"The enemy has gone farther west than we have realized. This can only mean bad news for our allies. We may need to gain the help of the elves. Their advanced weaponry will help us in our fight.\""
                   ]
                 }
               ]
@@ -5602,7 +6098,50 @@
                   ]
                 }
               ],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "LevelSelectScreenUp",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelSelected",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelNameText",
+                    "Text",
+                    "=",
+                    "\"The Elven Clockwork City\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelText",
+                    "Text",
+                    "=",
+                    "\"something about the enemies being here too and the elves join our cause.\""
+                  ]
+                }
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -5617,7 +6156,50 @@
                   ]
                 }
               ],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "LevelSelectScreenUp",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelSelected",
+                    "=",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelNameText",
+                    "Text",
+                    "=",
+                    "\"Southwind Docks\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelText",
+                    "Text",
+                    "=",
+                    "\"The port city of Southwind is under attack. we must help them. might be able to find a ship to sail us to [city]\""
+                  ]
+                }
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -5632,7 +6214,50 @@
                   ]
                 }
               ],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "LevelSelectScreenUp",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelSelected",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelNameText",
+                    "Text",
+                    "=",
+                    "\"Resistance Hideout\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelText",
+                    "Text",
+                    "=",
+                    "\"The city of [city] has fallen. The remaining humans have fled towards the shore to regain their strength. The arcane wizards join your army.\""
+                  ]
+                }
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -5647,7 +6272,647 @@
                   ]
                 }
               ],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "LevelSelectScreenUp",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelSelected",
+                    "=",
+                    "6"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelNameText",
+                    "Text",
+                    "=",
+                    "\"[city]\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LevelText",
+                    "Text",
+                    "=",
+                    "\"The city of [city]. Built ontop of a grand source of power. We must not let it fall into the wrong hands.\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "LevelSelectScreenUp",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "BattleButton",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "XButton",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "SettingsButton",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level1",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level2",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level3",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level4",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level5",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level6",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level1Win",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level2Win",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level3Win",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level4Win",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level5Win",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level6Win",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "LevelSelectBackground"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "LevelNameText"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "LevelText"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "XButton"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "BattleButton"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "SettingsButton",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "LevelSelectScreenUp",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "BattleButton",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "XButton",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "SettingsButton",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level1",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level2",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level3",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level4",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level5",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level6",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level1Win",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level2Win",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level3Win",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level4Win",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level5Win",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "Level6Win",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "LevelSelectBackground",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "LevelNameText",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "LevelText",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "XButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "BattleButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "SettingsButton"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "XButton",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "LevelSelectScreenUp",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "BattleButton",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelSelected",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Level 1\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelSelected",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Level 2\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelSelected",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelSelected",
+                        "=",
+                        "4"
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelSelected",
+                        "=",
+                        "5"
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelSelected",
+                        "=",
+                        "6"
+                      ]
+                    }
+                  ],
+                  "actions": []
+                }
+              ]
             }
           ],
           "parameters": []
@@ -5763,6 +7028,39 @@
               "booleanParameters": {}
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -5816,7 +7114,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2817259932079641,
+        "zoomFactor": 0.3797121001948045,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5824,10 +7122,10 @@
           "name": "Units",
           "objects": [
             {
-              "name": "Ally1"
+              "name": "AllyMelee"
             },
             {
-              "name": "Enemy1"
+              "name": "EnemyMelee"
             },
             {
               "name": "EnemyRanger"
@@ -5841,7 +7139,7 @@
           "name": "Allies",
           "objects": [
             {
-              "name": "Ally1"
+              "name": "AllyMelee"
             },
             {
               "name": "AllyRanger"
@@ -5852,7 +7150,7 @@
           "name": "Enemies",
           "objects": [
             {
-              "name": "Enemy1"
+              "name": "EnemyMelee"
             },
             {
               "name": "EnemyRanger"
@@ -6426,7 +7724,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "Units Layer",
-          "name": "Enemy1",
+          "name": "EnemyMelee",
           "persistentUuid": "efafa7a1-5622-4f86-a0b5-953b0809d4e0",
           "width": 0,
           "x": 896,
@@ -6474,7 +7772,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "Units Layer",
-          "name": "Enemy1",
+          "name": "EnemyMelee",
           "persistentUuid": "7c5ec558-24c6-46a0-afcc-f6bfea7dc7e2",
           "width": 0,
           "x": 896,
@@ -7532,7 +8830,7 @@
         {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "Ally1",
+          "name": "AllyMelee",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -7773,7 +9071,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Enemy1",
+          "name": "EnemyMelee",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -10126,13 +11424,13 @@
             "objectName": "Wall"
           },
           {
-            "objectName": "Ally1"
+            "objectName": "AllyMelee"
           },
           {
             "objectName": "AllyRanger"
           },
           {
-            "objectName": "Enemy1"
+            "objectName": "EnemyMelee"
           },
           {
             "objectName": "EnemyRanger"
@@ -13187,7 +14485,7 @@
                   },
                   "parameters": [
                     "",
-                    "Ally1",
+                    "AllyMelee",
                     "RandomInRange(-700, -128)",
                     "RandomInRange(64, 592)",
                     "\"Units Layer\""
@@ -13200,8 +14498,8 @@
                   "parameters": [
                     "",
                     "HealthBarEmpty",
-                    "Ally1.X() + 2",
-                    "Ally1.Y() - 16",
+                    "AllyMelee.X() + 2",
+                    "AllyMelee.Y() - 16",
                     "\"Resource Bar Layer\""
                   ]
                 },
@@ -13212,8 +14510,8 @@
                   "parameters": [
                     "",
                     "HealthBarFilled",
-                    "Ally1.X() + 2",
-                    "Ally1.Y() - 16",
+                    "AllyMelee.X() + 2",
+                    "AllyMelee.Y() - 16",
                     "\"Resource Bar Layer\""
                   ]
                 },
@@ -13224,8 +14522,8 @@
                   "parameters": [
                     "",
                     "EnergyBarEmpty",
-                    "Ally1.X() + 2",
-                    "Ally1.Y() - 9",
+                    "AllyMelee.X() + 2",
+                    "AllyMelee.Y() - 9",
                     "\"Resource Bar Layer\""
                   ]
                 },
@@ -13236,8 +14534,8 @@
                   "parameters": [
                     "",
                     "EnergyBarFilled",
-                    "Ally1.X() + 2",
-                    "Ally1.Y() - 9",
+                    "AllyMelee.X() + 2",
+                    "AllyMelee.Y() - 9",
                     "\"Resource Bar Layer\""
                   ]
                 },
@@ -13260,7 +14558,7 @@
                   "parameters": [
                     "",
                     "HealthBarEmpty",
-                    "Ally1"
+                    "AllyMelee"
                   ]
                 },
                 {
@@ -13270,7 +14568,7 @@
                   "parameters": [
                     "",
                     "HealthBarFilled",
-                    "Ally1"
+                    "AllyMelee"
                   ]
                 },
                 {
@@ -13280,7 +14578,7 @@
                   "parameters": [
                     "",
                     "EnergyBarEmpty",
-                    "Ally1"
+                    "AllyMelee"
                   ]
                 },
                 {
@@ -13290,7 +14588,7 @@
                   "parameters": [
                     "",
                     "EnergyBarFilled",
-                    "Ally1"
+                    "AllyMelee"
                   ]
                 },
                 {
@@ -13300,7 +14598,7 @@
                   "parameters": [
                     "",
                     "Range",
-                    "Ally1"
+                    "AllyMelee"
                   ]
                 },
                 {
@@ -13311,7 +14609,7 @@
                     "Range",
                     "Resizable",
                     "=",
-                    "Ally1.Range * 64 + 64"
+                    "AllyMelee.Range * 64 + 64"
                   ]
                 },
                 {
@@ -13702,7 +15000,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "960",
                     "64",
                     "\"Units Layer\""
@@ -13714,7 +15012,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "896",
                     "192",
                     "\"Units Layer\""
@@ -13726,7 +15024,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "896",
                     "384",
                     "\"Units Layer\""
@@ -13738,7 +15036,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "960",
                     "512",
                     "\"Units Layer\""
@@ -13927,7 +15225,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "896",
                     "192",
                     "\"Units Layer\""
@@ -13939,7 +15237,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "960",
                     "384",
                     "\"Units Layer\""
@@ -14140,7 +15438,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "960",
                     "256",
                     "\"Units Layer\""
@@ -14152,7 +15450,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "960",
                     "320",
                     "\"Units Layer\""
@@ -14365,7 +15663,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "960",
                     "128",
                     "\"Units Layer\""
@@ -14377,7 +15675,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "896",
                     "256",
                     "\"Units Layer\""
@@ -14389,7 +15687,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "896",
                     "384",
                     "\"Units Layer\""
@@ -14401,7 +15699,7 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy1",
+                    "EnemyMelee",
                     "1024",
                     "512",
                     "\"Units Layer\""
@@ -14741,7 +16039,7 @@
                   },
                   "parameters": [
                     "",
-                    "Ally1",
+                    "AllyMelee",
                     "PositionText"
                   ]
                 }
