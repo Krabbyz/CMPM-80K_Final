@@ -349,16 +349,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/battleMusic.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\battleMusic.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/meleeHit.wav",
         "kind": "audio",
         "metadata": "",
@@ -379,10 +369,20 @@
         "userAdded": false
       },
       {
-        "file": "assets/wallHit.wav",
+        "file": "assets/battle_music_loop.wav",
         "kind": "audio",
         "metadata": "",
-        "name": "assets\\wallHit.wav",
+        "name": "assets\\battle_music_loop.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/wall_hit.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\wall_hit.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -518,7 +518,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.16031528804546827,
+        "zoomFactor": 0.4057518905943869,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -597,7 +597,7 @@
           "name": "CreditsText",
           "persistentUuid": "5b4285b2-a87b-4cb6-8928-5808cc3a5e96",
           "width": 0,
-          "x": -853,
+          "x": -867,
           "y": 162,
           "zOrder": 5,
           "numberProperties": [],
@@ -1049,7 +1049,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\nAaron Tan\n\nAll sound effects used in this \ngame are from Freesound.org",
+          "string": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\nAaron Tan\n\nAll sound effects are from \nFreesound.org and are licensed \nunder CC0.",
           "font": "",
           "textAlignment": "center",
           "characterSize": 32,
@@ -1072,7 +1072,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\nAaron Tan\n\nAll sound effects used in this \ngame are from Freesound.org",
+            "text": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\nAaron Tan\n\nAll sound effects are from \nFreesound.org and are licensed \nunder CC0.",
             "font": "",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
@@ -11695,7 +11695,7 @@
               },
               "parameters": [
                 "",
-                "assets\\battleMusic.mp3",
+                "assets\\battle_music_loop.wav",
                 "1",
                 "yes",
                 "50 * (MusicVolume/100)",
@@ -14050,7 +14050,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Wall Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14243,7 +14242,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets\\wallHit.wav",
+                    "assets\\wall_hit.wav",
                     "",
                     "SFXVolume",
                     ""
