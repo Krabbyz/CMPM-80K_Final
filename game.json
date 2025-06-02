@@ -711,6 +711,16 @@
         "name": "assets\\Threat Icon\\threat_icon_frame12.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/explosion_sound.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\explosion_sound.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -18693,7 +18703,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19392,7 +19401,7 @@
                             "",
                             "assets\\deathSound.wav",
                             "",
-                            "80 * (SFXVolume/100)",
+                            "60 * (SFXVolume/100)",
                             ""
                           ]
                         }
@@ -33376,7 +33385,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -34104,7 +34112,7 @@
                             "",
                             "assets\\deathSound.wav",
                             "",
-                            "80 * (SFXVolume/100)",
+                            "60 * (SFXVolume/100)",
                             ""
                           ]
                         }
@@ -45647,7 +45655,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -45855,6 +45862,18 @@
                                   },
                                   "parameters": [
                                     "Mine",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\explosion_sound.wav",
+                                    "",
+                                    "40 * (SFXVolume/100)",
                                     ""
                                   ]
                                 }
@@ -46533,7 +46552,7 @@
                             "",
                             "assets\\deathSound.wav",
                             "",
-                            "80 * (SFXVolume/100)",
+                            "60 * (SFXVolume/100)",
                             ""
                           ]
                         }
@@ -58942,7 +58961,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -59150,6 +59168,18 @@
                                   },
                                   "parameters": [
                                     "Mine",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\explosion_sound.wav",
+                                    "",
+                                    "40 * (SFXVolume/100)",
                                     ""
                                   ]
                                 }
@@ -59857,7 +59887,7 @@
                             "",
                             "assets\\deathSound.wav",
                             "",
-                            "80 * (SFXVolume/100)",
+                            "60 * (SFXVolume/100)",
                             ""
                           ]
                         }
