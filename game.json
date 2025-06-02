@@ -1059,9 +1059,9 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Game Name",
+          "string": "Campaign\nAgainst the\nDead",
           "font": "",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 50,
           "color": {
             "b": 0,
@@ -1082,9 +1082,9 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Game Name",
+            "text": "Campaign\nAgainst the\nDead",
             "font": "",
-            "textAlignment": "left",
+            "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 50,
             "color": "0;0;0"
