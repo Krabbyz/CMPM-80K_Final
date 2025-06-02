@@ -753,6 +753,70 @@
         "name": "assets\\Ally Units\\80K Final - Basic Melee Unit - Idle.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Ally Units/Explosive Keg/keg_idle1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally Units\\Explosive Keg\\keg_idle1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ally Units/Explosive Keg/keg_idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally Units\\Explosive Keg\\keg_idle2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ally Units/Explosive Keg/keg_idle3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally Units\\Explosive Keg\\keg_idle3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ally Units/Explosive Keg/keg_idle5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally Units\\Explosive Keg\\keg_idle5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ally Units/Explosive Keg/keg_idle6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally Units\\Explosive Keg\\keg_idle6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ally Units/Explosive Keg/keg_idle7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally Units\\Explosive Keg\\keg_idle7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ally Units/Explosive Keg/keg_idle4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally Units\\Explosive Keg\\keg_idle4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ally Units/Explosive Keg/keg_idle8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally Units\\Explosive Keg\\keg_idle8.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2174,7 +2238,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8141881203709996,
+        "zoomFactor": 0.7130377630690471,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -46879,6 +46943,306 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\Ally Units\\80K Final - Explosive Keg.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 63
+                          },
+                          {
+                            "x": 9,
+                            "y": 63
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Idle Bounce",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.083,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Ally Units\\Explosive Keg\\keg_idle1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 63
+                          },
+                          {
+                            "x": 9,
+                            "y": 63
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Ally Units\\Explosive Keg\\keg_idle2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 63
+                          },
+                          {
+                            "x": 9,
+                            "y": 63
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Ally Units\\Explosive Keg\\keg_idle3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 63
+                          },
+                          {
+                            "x": 9,
+                            "y": 63
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Ally Units\\Explosive Keg\\keg_idle4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 63
+                          },
+                          {
+                            "x": 9,
+                            "y": 63
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Ally Units\\Explosive Keg\\keg_idle5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 63
+                          },
+                          {
+                            "x": 9,
+                            "y": 63
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Ally Units\\Explosive Keg\\keg_idle6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 63
+                          },
+                          {
+                            "x": 9,
+                            "y": 63
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Ally Units\\Explosive Keg\\keg_idle7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 3
+                          },
+                          {
+                            "x": 55,
+                            "y": 63
+                          },
+                          {
+                            "x": 9,
+                            "y": 63
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Ally Units\\Explosive Keg\\keg_idle8.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
