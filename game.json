@@ -2142,7 +2142,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7619362677197677,
+        "zoomFactor": 0.8141881203709996,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -6271,7 +6271,7 @@
                     "LevelText",
                     "Text",
                     "=",
-                    "\"Greetings General, urgent word came from the Eastern Kingdom of Eryndor. Their capital is under siege and calls for our aid. Rally your forces and prepare to march east, for our allies’ fate hangs in the balance. Our King has supplied you with his finest dwarven warriors to equip you on your journey.\n\nGood luck, and may victory be ours!\""
+                    "\"Greetings, General. Urgent word came from the Eastern Kingdom of Eryndor: their capital is under siege and calls for our aid. Rally your forces and prepare to march east, for our allies’ fate hangs in the balance. Our King has supplied you with his finest dwarven warriors to equip you on your journey.\n\nGood luck, and may victory be ours!\""
                   ]
                 }
               ]
@@ -6329,7 +6329,7 @@
                     "LevelText",
                     "Text",
                     "=",
-                    "\"The enemy has gone farther west than we have realized. This can only mean bad news for our allies. We may need to gain the help of the elves. Their advanced weaponry will help us in our fight.\""
+                    "\"The enemy has advanced farther west than we realized, breaching lands once thought safe. This spells disaster for our allies. We must seek the elves, their advanced weaponry and battlefield precision will aid us greatly in our fight.\""
                   ]
                 }
               ]
@@ -6387,7 +6387,7 @@
                     "LevelText",
                     "Text",
                     "=",
-                    "\"something about the enemies being here too and the elves join our cause.\""
+                    "\"You’ve reached Ilvathar, the Elven Clockwork City—an architectural marvel teeming with centuries-old knowledge. Yet enemy forces have infiltrated the outer districts. The elves agree to aid us, but only if we help purge the invaders from their land.\""
                   ]
                 }
               ]
@@ -6445,7 +6445,7 @@
                     "LevelText",
                     "Text",
                     "=",
-                    "\"The port city of Southwind is under attack. we must help them. might be able to find a ship to sail us to [city]\""
+                    "\"The port city of Southwind is ablaze. Enemy vessels choke the harbor while civilians flee inland. We must secure the docks, assist the defenders, and find a ship to carry us across the sea. Our path forward depends on reclaiming this vital passage.\""
                   ]
                 }
               ]
@@ -6503,7 +6503,7 @@
                     "LevelText",
                     "Text",
                     "=",
-                    "\"The city of Eryndor has fallen. The remaining humans have fled towards the shore to regain their strength. The arcane wizards join your army.\""
+                    "\"Eryndor’s outer defenses have fallen. The survivors gather at a hidden resistance camp along the coast. Morale is shattered, but within these ranks are the arcane mages. If we can protect the last of them, their power may yet turn the tide.\""
                   ]
                 }
               ]
@@ -6561,7 +6561,7 @@
                     "LevelText",
                     "Text",
                     "=",
-                    "\"The city of Eryndor. Built ontop of a grand source of power. We must not let it fall into the wrong hands.\""
+                    "\"At last, we reach Eryndor—the capital, a city built atop a grand source of ancient power. The enemy converges, seeking to claim it. We must rally the last of our forces and make a final stand.\""
                   ]
                 }
               ]
