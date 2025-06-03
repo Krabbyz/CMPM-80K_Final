@@ -817,6 +817,30 @@
         "name": "assets\\Ally Units\\Explosive Keg\\keg_idle8.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Wall - 1st Level/wall1_damaged.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Wall - 1st Level\\wall1_damaged.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Wall - 1st Level/wall1_destroyed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Wall - 1st Level\\wall1_destroyed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy_Bomber.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Enemy_Bomber.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -864,7 +888,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3797121001947973,
+        "zoomFactor": 0.3553434558817022,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7481,7 +7505,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.47893418845354196,
+        "zoomFactor": 0.6244537826600216,
         "windowMask": false
       },
       "objectsGroups": [
@@ -10822,16 +10846,88 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "Healthy",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 10000000000000000,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\Wall - 1st Level\\wall1_healthy.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 22,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 720
+                          },
+                          {
+                            "x": 22,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Wall - 1st Level\\wall1_damaged.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 22,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 720
+                          },
+                          {
+                            "x": 22,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Wall - 1st Level\\wall1_destroyed.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -18158,7 +18254,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Dragging",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18799,6 +18894,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19598,7 +19694,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19940,6 +20035,35 @@
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::Width"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled",
+                        "Resizable",
+                        ">=",
+                        "EnergyBarEmpty.Width()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled",
+                        "Resizable",
+                        "=",
+                        "EnergyBarEmpty.Width()"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -20295,6 +20419,73 @@
                     "Text",
                     "=",
                     "\"Health: \" + ToString(Wall.Variable(Health))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "13"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    ">",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "=",
+                    "2"
                   ]
                 }
               ]
@@ -22724,7 +22915,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ally Buffs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22743,6 +22933,37 @@
                     "MaxEnergy",
                     "=",
                     "AllyMelee.OriginalMaxEnergy - floor(NumMelees/3)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyMelee",
+                        "MaxEnergy",
+                        "<",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyMelee",
+                        "MaxEnergy",
+                        "=",
+                        "0"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -23533,7 +23754,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5468750000000195,
+        "zoomFactor": 0.7876290101674032,
         "windowMask": false
       },
       "objectsGroups": [
@@ -26624,11 +26845,83 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 1e+26,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\Wall - 1st Level\\wall1_healthy.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 22,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 720
+                          },
+                          {
+                            "x": 22,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Wall - 1st Level\\wall1_damaged.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 22,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 720
+                          },
+                          {
+                            "x": 22,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Wall - 1st Level\\wall1_destroyed.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -33481,6 +33774,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -34309,7 +34603,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -34651,6 +34944,35 @@
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::Width"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled",
+                        "Resizable",
+                        ">=",
+                        "EnergyBarEmpty.Width()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled",
+                        "Resizable",
+                        "=",
+                        "EnergyBarEmpty.Width()"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -35006,6 +35328,73 @@
                     "Text",
                     "=",
                     "\"Health: \" + ToString(Wall.Variable(Health))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "13"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    ">",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "=",
+                    "2"
                   ]
                 }
               ]
@@ -37905,6 +38294,37 @@
                     "AllyMelee.OriginalMaxEnergy - floor(NumMelees/3)"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyMelee",
+                        "MaxEnergy",
+                        "<",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyMelee",
+                        "MaxEnergy",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -38258,7 +38678,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6455105703311718,
+        "zoomFactor": 0.8700232859857631,
         "windowMask": false
       },
       "objectsGroups": [
@@ -38282,6 +38702,9 @@
             },
             {
               "name": "AllyTinkerer"
+            },
+            {
+              "name": "EnemyBomber"
             }
           ]
         },
@@ -38310,6 +38733,9 @@
             },
             {
               "name": "EnemyRanger"
+            },
+            {
+              "name": "EnemyBomber"
             }
           ]
         }
@@ -40183,22 +40609,6 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "EnemyRanger",
-          "persistentUuid": "4429e844-30da-4b2f-9e9b-54cff3c81144",
-          "width": 0,
-          "x": 1024,
-          "y": 192,
-          "zOrder": 62,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
           "name": "ShopExplosives",
           "persistentUuid": "b2ec9854-cc82-4e25-8671-e5a6f96662c3",
           "width": 0,
@@ -40254,6 +40664,38 @@
           "x": -847,
           "y": 544,
           "zOrder": 66,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "EnemyBomber",
+          "persistentUuid": "6ca3ab0c-a9f6-4006-8f18-1ea77a2edfbe",
+          "width": 0,
+          "x": 960,
+          "y": 320,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "EnemyMelee",
+          "persistentUuid": "8e50f7b7-a923-484c-ab9d-db266d004254",
+          "width": 0,
+          "x": 960,
+          "y": 192,
+          "zOrder": 68,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -41437,11 +41879,83 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 1e+26,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\Wall - 1st Level\\wall1_healthy.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 22,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 720
+                          },
+                          {
+                            "x": 22,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Wall - 1st Level\\wall1_damaged.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 22,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 720
+                          },
+                          {
+                            "x": 22,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Wall - 1st Level\\wall1_destroyed.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -47548,6 +48062,184 @@
               "width": 192
             }
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "EnemyBomber",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Movement",
+              "type": "number",
+              "value": 64
+            },
+            {
+              "name": "TicksToMove",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "Moving",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Health",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "name": "MaxHealth",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "name": "Energy",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "hasMixedValues": true,
+              "name": "MaxEnergy",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "AttackUsed",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "hasMixedValues": true,
+              "name": "Range",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "TouchedWall",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "GoldOnDeath",
+              "type": "number",
+              "value": 3
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Enemy_Bomber.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "EnemyBomberExplosion",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\range.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -47705,6 +48397,12 @@
             "objectName": "EnemyRanger"
           },
           {
+            "objectName": "EnemyBomber"
+          },
+          {
+            "objectName": "EnemyBomberExplosion"
+          },
+          {
             "objectName": "Mine"
           },
           {
@@ -47793,7 +48491,7 @@
               "parameters": [
                 "Gold",
                 "=",
-                "15"
+                "20"
               ]
             },
             {
@@ -47803,7 +48501,7 @@
               "parameters": [
                 "EnemiesLeft",
                 "=",
-                "2"
+                "3"
               ]
             },
             {
@@ -48035,14 +48733,6 @@
               },
               "parameters": [
                 "EnemyIndicator4"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "EnemyIndicator5"
               ]
             },
             {
@@ -49219,6 +49909,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -49417,7 +50108,7 @@
                                     "Enemies",
                                     "Health",
                                     "-",
-                                    "3"
+                                    "2"
                                   ]
                                 },
                                 {
@@ -49836,6 +50527,68 @@
                     },
                     {
                       "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "EnemyBomber",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberObjectVariable"
+                          },
+                          "parameters": [
+                            "EnemyBomber",
+                            "Health",
+                            "<=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "EnemyBomberExplosion",
+                            "EnemyBomber.X()-64",
+                            "EnemyBomber.Y()-64",
+                            "\"Under Units Layer\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                          },
+                          "parameters": [
+                            "EnemyBomberExplosion",
+                            "Resizable",
+                            "=",
+                            "64*3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+                          },
+                          "parameters": [
+                            "EnemyBomberExplosion",
+                            "Resizable",
+                            "=",
+                            "64*3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "EnemyBomberExplosion",
+                            "\"Explosion\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::ForEach",
                       "object": "AllyMelee",
                       "conditions": [
                         {
@@ -50208,6 +50961,72 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "EnemyBomberExplosion",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "EnemyBomberExplosion",
+                    "\"Explosion\"",
+                    ">=",
+                    "0.3"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Allies",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Allies",
+                        "EnemyBomberExplosion",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Allies",
+                        "Health",
+                        "-",
+                        "3"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "EnemyBomberExplosion",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -50217,7 +51036,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -50559,6 +51377,35 @@
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::Width"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled",
+                        "Resizable",
+                        ">=",
+                        "EnergyBarEmpty.Width()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled",
+                        "Resizable",
+                        "=",
+                        "EnergyBarEmpty.Width()"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -50914,6 +51761,73 @@
                     "Text",
                     "=",
                     "\"Health: \" + ToString(Wall.Variable(Health))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "13"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    ">",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "=",
+                    "2"
                   ]
                 }
               ]
@@ -52006,7 +52920,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -52023,7 +52936,7 @@
                     "WaveText",
                     "Text",
                     "=",
-                    "\"Wave: \" + Wave + \"/6\""
+                    "\"Wave: \" + Wave + \"/7\""
                   ]
                 }
               ],
@@ -52038,7 +52951,7 @@
                       "parameters": [
                         "Wave",
                         ">=",
-                        "6"
+                        "7"
                       ]
                     }
                   ],
@@ -52051,7 +52964,7 @@
                         "WaveText",
                         "Text",
                         "=",
-                        "\"Wave: 6/6\""
+                        "\"Wave: 7/7\""
                       ]
                     }
                   ]
@@ -52175,8 +53088,8 @@
                   "parameters": [
                     "",
                     "EnemyMelee",
-                    "832+(64*2)",
-                    "64*1",
+                    "832+(64*1)",
+                    "64*4",
                     "\"Units Layer\""
                   ]
                 },
@@ -52198,9 +53111,9 @@
                   },
                   "parameters": [
                     "",
-                    "EnemyMelee",
+                    "EnemyBomber",
                     "832+(64*3)",
-                    "64*7",
+                    "64*5",
                     "\"Units Layer\""
                   ]
                 },
@@ -52209,7 +53122,16 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "EnemyIndicator1",
+                    "EnemyIndicator4",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator5",
                     ""
                   ]
                 },
@@ -52219,15 +53141,6 @@
                   },
                   "parameters": [
                     "EnemyIndicator6",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator7",
                     ""
                   ]
                 },
@@ -52416,7 +53329,7 @@
                     "",
                     "EnemyMelee",
                     "832+(64*1)",
-                    "64*3",
+                    "64*2",
                     "\"Units Layer\""
                   ]
                 },
@@ -52438,9 +53351,9 @@
                   },
                   "parameters": [
                     "",
-                    "EnemyMelee",
+                    "EnemyBomber",
                     "832+(64*3)",
-                    "64*7",
+                    "64*4",
                     "\"Units Layer\""
                   ]
                 },
@@ -52461,7 +53374,16 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "EnemyIndicator3",
+                    "EnemyIndicator2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator4",
                     ""
                   ]
                 },
@@ -52471,15 +53393,6 @@
                   },
                   "parameters": [
                     "EnemyIndicator5",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator7",
                     ""
                   ]
                 },
@@ -52668,7 +53581,7 @@
                     "",
                     "EnemyMelee",
                     "832+(64*2)",
-                    "64*3",
+                    "64*1",
                     "\"Units Layer\""
                   ]
                 },
@@ -52692,7 +53605,7 @@
                     "",
                     "EnemyMelee",
                     "832+(64*1)",
-                    "64*5",
+                    "64*8",
                     "\"Units Layer\""
                   ]
                 },
@@ -52704,7 +53617,7 @@
                     "",
                     "EnemyRanger",
                     "832+(64*3)",
-                    "64*8",
+                    "64*3",
                     "\"Units Layer\""
                   ]
                 },
@@ -52725,6 +53638,15 @@
                     "value": "Montre"
                   },
                   "parameters": [
+                    "EnemyIndicator1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
                     "EnemyIndicator3",
                     ""
                   ]
@@ -52735,15 +53657,6 @@
                   },
                   "parameters": [
                     "EnemyIndicator4",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator5",
                     ""
                   ]
                 },
@@ -52940,7 +53853,7 @@
                   "parameters": [
                     "",
                     "EnemyMelee",
-                    "832+(64*1)",
+                    "832+(64*2)",
                     "64*1",
                     "\"Units Layer\""
                   ]
@@ -52952,20 +53865,8 @@
                   "parameters": [
                     "",
                     "EnemyMelee",
-                    "832+(64*2)",
-                    "64*3",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyMelee",
                     "832+(64*4)",
-                    "64*4",
+                    "6",
                     "\"Units Layer\""
                   ]
                 },
@@ -52975,9 +53876,9 @@
                   },
                   "parameters": [
                     "",
-                    "EnemyMelee",
+                    "EnemyBomber",
                     "832+(64*1)",
-                    "64*5",
+                    "64*2",
                     "\"Units Layer\""
                   ]
                 },
@@ -52987,19 +53888,22 @@
                   },
                   "parameters": [
                     "",
-                    "EnemyMelee",
-                    "832+(64*3)",
+                    "EnemyBomber",
+                    "832+(64*2)",
                     "64*7",
                     "\"Units Layer\""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Montre"
+                    "value": "Create"
                   },
                   "parameters": [
-                    "EnemyIndicator1",
-                    ""
+                    "",
+                    "EnemyRanger",
+                    "832+(64*4)",
+                    "64*2",
+                    "\"Units Layer\""
                   ]
                 },
                 {
@@ -53007,25 +53911,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "EnemyIndicator3",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator4",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator5",
+                    "EnemyIndicator2",
                     ""
                   ]
                 },
@@ -53212,7 +54098,7 @@
                   "parameters": [
                     "EnemiesLeft",
                     "=",
-                    "7"
+                    "5"
                   ]
                 },
                 {
@@ -53246,7 +54132,7 @@
                   "parameters": [
                     "",
                     "EnemyMelee",
-                    "832+(64*1)",
+                    "832+(64*2)",
                     "64*4",
                     "\"Units Layer\""
                   ]
@@ -53257,9 +54143,279 @@
                   },
                   "parameters": [
                     "",
+                    "EnemyRanger",
+                    "832+(64*3)",
+                    "64*3",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*4)",
+                    "64*7",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator4",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator7",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "+",
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Enemies",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarFilled"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Wave",
+                    "=",
+                    "7"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "=",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EnemiesLeft",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
                     "EnemyMelee",
                     "832+(64*1)",
-                    "64*5",
+                    "64*3",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*2)",
+                    "64*1",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*1)",
+                    "64*7",
                     "\"Units Layer\""
                   ]
                 },
@@ -53289,18 +54445,6 @@
                 },
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyRanger",
-                    "832+(64*4)",
-                    "64*5",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
@@ -53322,6 +54466,15 @@
                     "value": "Montre"
                   },
                   "parameters": [
+                    "EnemyIndicator3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
                     "EnemyIndicator4",
                     ""
                   ]
@@ -53331,7 +54484,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "EnemyIndicator5",
+                    "EnemyIndicator7",
                     ""
                   ]
                 },
@@ -53486,7 +54639,7 @@
                   "parameters": [
                     "Wave",
                     "=",
-                    "7"
+                    "8"
                   ]
                 },
                 {
@@ -53496,7 +54649,7 @@
                   "parameters": [
                     "temp",
                     "=",
-                    "6"
+                    "7"
                   ]
                 }
               ],
@@ -54215,7 +55368,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ally Buffs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -54234,6 +55386,37 @@
                     "MaxEnergy",
                     "=",
                     "AllyMelee.OriginalMaxEnergy - floor(NumMelees/3)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyMelee",
+                        "MaxEnergy",
+                        "<",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyMelee",
+                        "MaxEnergy",
+                        "=",
+                        "0"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -54269,7 +55452,38 @@
                     "AllyExplosivesExpert",
                     "MaxEnergy",
                     "=",
-                    "AllyExplosivesExpert.OriginalMaxEnergy - NumElves"
+                    "AllyExplosivesExpert.OriginalMaxEnergy - floor(NumElves/2)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyExplosivesExpert",
+                        "MaxEnergy",
+                        "<",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyMelee",
+                        "MaxEnergy",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -54631,7 +55845,7 @@
           "isLocked": false,
           "name": "Test/Debug Layer",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
@@ -54703,7 +55917,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6672773998330236,
+        "zoomFactor": 0.34375202416124695,
         "windowMask": false
       },
       "objectsGroups": [
@@ -54730,6 +55944,12 @@
             },
             {
               "name": "AllyMerchant"
+            },
+            {
+              "name": "EnemyBomber"
+            },
+            {
+              "name": "EnemyRanger2"
             }
           ]
         },
@@ -54761,6 +55981,12 @@
             },
             {
               "name": "EnemyRanger"
+            },
+            {
+              "name": "EnemyBomber"
+            },
+            {
+              "name": "EnemyRanger2"
             }
           ]
         }
@@ -56745,6 +57971,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Units Layer",
+          "name": "EnemyBomber",
+          "persistentUuid": "9e9a2325-a8c9-464b-95e2-4eb93aeb2a40",
+          "width": 0,
+          "x": 960,
+          "y": 384,
+          "zOrder": 69,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -57925,11 +59167,83 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 1e+41,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\Wall - 1st Level\\wall1_healthy.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 22,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 720
+                          },
+                          {
+                            "x": 22,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Wall - 1st Level\\wall1_damaged.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 22,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 0
+                          },
+                          {
+                            "x": 168,
+                            "y": 720
+                          },
+                          {
+                            "x": 22,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Wall - 1st Level\\wall1_destroyed.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -63961,7 +65275,7 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "Buy Merchant $5",
+              "string": "Buy Merchant $6",
               "font": "mononoki-Regular.ttf",
               "textAlignment": "center",
               "characterSize": 15,
@@ -63984,7 +65298,7 @@
                 "shadowOpacity": 127,
                 "smoothed": true,
                 "underlined": false,
-                "text": "Buy Merchant $5",
+                "text": "Buy Merchant $6",
                 "font": "mononoki-Regular.ttf",
                 "textAlignment": "center",
                 "verticalTextAlignment": "top",
@@ -64003,6 +65317,316 @@
               "width": 192
             }
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "EnemyBomber",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Movement",
+              "type": "number",
+              "value": 64
+            },
+            {
+              "name": "TicksToMove",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "Moving",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Health",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "name": "MaxHealth",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "name": "Energy",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "hasMixedValues": true,
+              "name": "MaxEnergy",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "AttackUsed",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "hasMixedValues": true,
+              "name": "Range",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "TouchedWall",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "GoldOnDeath",
+              "type": "number",
+              "value": 2
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Enemy_Bomber.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "EnemyBomberExplosion",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\range.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "EnemyRanger2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Movement",
+              "type": "number",
+              "value": 64
+            },
+            {
+              "name": "TicksToMove",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "Moving",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Health",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "MaxHealth",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "Energy",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "MaxEnergy",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "AttackUsed",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Range",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "MaxEnemiesHit",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "TouchedWall",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "GoldOnDeath",
+              "type": "number",
+              "value": 2
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\80K Final - Basic Ranged Enemy - Idle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 63,
+                            "y": 0
+                          },
+                          {
+                            "x": 63,
+                            "y": 64
+                          },
+                          {
+                            "x": 1,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -64169,6 +65793,15 @@
             "objectName": "EnemyRanger"
           },
           {
+            "objectName": "EnemyRanger2"
+          },
+          {
+            "objectName": "EnemyBomber"
+          },
+          {
+            "objectName": "EnemyBomberExplosion"
+          },
+          {
             "objectName": "Mine"
           },
           {
@@ -64212,6 +65845,9 @@
           },
           {
             "objectName": "Button1"
+          },
+          {
+            "objectName": "NewSprite3"
           }
         ]
       },
@@ -64267,7 +65903,7 @@
               "parameters": [
                 "EnemiesLeft",
                 "=",
-                "2"
+                "3"
               ]
             },
             {
@@ -64517,14 +66153,6 @@
               },
               "parameters": [
                 "EnemyIndicator5"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "EnemyIndicator6"
               ]
             },
             {
@@ -65693,6 +67321,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -66310,6 +67939,68 @@
                     },
                     {
                       "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "EnemyBomber",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberObjectVariable"
+                          },
+                          "parameters": [
+                            "EnemyBomber",
+                            "Health",
+                            "<=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "EnemyBomberExplosion",
+                            "EnemyBomber.X()-64",
+                            "EnemyBomber.Y()-64",
+                            "\"Under Units Layer\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                          },
+                          "parameters": [
+                            "EnemyBomberExplosion",
+                            "Resizable",
+                            "=",
+                            "64*3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+                          },
+                          "parameters": [
+                            "EnemyBomberExplosion",
+                            "Resizable",
+                            "=",
+                            "64*3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "EnemyBomberExplosion",
+                            "\"Explosion\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::ForEach",
                       "object": "AllyMelee",
                       "conditions": [
                         {
@@ -66711,6 +68402,72 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "EnemyBomberExplosion",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "EnemyBomberExplosion",
+                    "\"Explosion\"",
+                    ">=",
+                    "0.3"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Allies",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Allies",
+                        "EnemyBomberExplosion",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Allies",
+                        "Health",
+                        "-",
+                        "3"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "EnemyBomberExplosion",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -66720,7 +68477,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -67062,6 +68818,35 @@
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::Width"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled",
+                        "Resizable",
+                        ">=",
+                        "EnergyBarEmpty.Width()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled",
+                        "Resizable",
+                        "=",
+                        "EnergyBarEmpty.Width()"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -67417,6 +69202,73 @@
                     "Text",
                     "=",
                     "\"Health: \" + ToString(Wall.Variable(Health))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "13"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    ">",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "=",
+                    "2"
                   ]
                 }
               ]
@@ -68486,7 +70338,7 @@
                   "parameters": [
                     "Gold",
                     "-",
-                    "5"
+                    "6"
                   ]
                 },
                 {
@@ -68627,7 +70479,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -68644,7 +70495,7 @@
                     "WaveText",
                     "Text",
                     "=",
-                    "\"Wave: \" + Wave + \"/6\""
+                    "\"Wave: \" + Wave + \"/9\""
                   ]
                 }
               ],
@@ -68659,7 +70510,7 @@
                       "parameters": [
                         "Wave",
                         ">=",
-                        "6"
+                        "9"
                       ]
                     }
                   ],
@@ -68672,7 +70523,7 @@
                         "WaveText",
                         "Text",
                         "=",
-                        "\"Wave: 6/6\""
+                        "\"Wave: 9/9\""
                       ]
                     }
                   ]
@@ -68763,7 +70614,7 @@
                       "parameters": [
                         "Gold",
                         "+",
-                        "2 + NumMerchants"
+                        "1 + NumMerchants"
                       ]
                     }
                   ]
@@ -68803,7 +70654,7 @@
                   "parameters": [
                     "EnemiesLeft",
                     "=",
-                    "3"
+                    "4"
                   ]
                 },
                 {
@@ -68813,7 +70664,7 @@
                   "parameters": [
                     "",
                     "EnemyMelee",
-                    "832+(64*2)",
+                    "832+(64*1)",
                     "64*1",
                     "\"Units Layer\""
                   ]
@@ -68825,8 +70676,8 @@
                   "parameters": [
                     "",
                     "EnemyMelee",
-                    "832+(64*1)",
-                    "64*6",
+                    "832+(64*2)",
+                    "64*3",
                     "\"Units Layer\""
                   ]
                 },
@@ -68844,10 +70695,304 @@
                 },
                 {
                   "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*4)",
+                    "64*8",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
                     "EnemyIndicator1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator7",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "+",
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Enemies",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarFilled"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Wave",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EnemiesLeft",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*1)",
+                    "64*3",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*2)",
+                    "64*5",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*3)",
+                    "64*7",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*4)",
+                    "64*5",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*4)",
+                    "64*6",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator5",
                     ""
                   ]
                 },
@@ -69021,258 +71166,6 @@
                   "parameters": [
                     "Wave",
                     "=",
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "temp",
-                    "=",
-                    "2"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "EnemiesLeft",
-                    "=",
-                    "4"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyMelee",
-                    "832+(64*1)",
-                    "64*3",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyMelee",
-                    "832+(64*2)",
-                    "64*5",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyMelee",
-                    "832+(64*3)",
-                    "64*7",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyRanger",
-                    "832+(64*4)",
-                    "64*5",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator3",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator5",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator7",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "temp",
-                    "+",
-                    "1"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "Enemies",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarEmpty",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 16",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarFilled",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 16",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarEmpty",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 9",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarFilled",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 9",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarEmpty",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarFilled",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarEmpty",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarFilled",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "HealthBarEmpty"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "HealthBarFilled"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "EnergyBarEmpty"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "EnergyBarFilled"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Wave",
-                    "=",
                     "4"
                   ]
                 },
@@ -69295,7 +71188,7 @@
                   "parameters": [
                     "EnemiesLeft",
                     "=",
-                    "5"
+                    "7"
                   ]
                 },
                 {
@@ -69306,7 +71199,7 @@
                     "",
                     "EnemyMelee",
                     "832+(64*2)",
-                    "64*3",
+                    "64*2",
                     "\"Units Layer\""
                   ]
                 },
@@ -69328,9 +71221,21 @@
                   },
                   "parameters": [
                     "",
-                    "EnemyMelee",
+                    "EnemyBomber",
                     "832+(64*1)",
-                    "64*5",
+                    "64*7",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*1)",
+                    "64*3",
                     "\"Units Layer\""
                   ]
                 },
@@ -69354,8 +71259,29 @@
                     "",
                     "EnemyRanger",
                     "832+(64*4)",
+                    "64*2",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger2",
+                    "832+(64*2)",
                     "64*4",
                     "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator2",
+                    ""
                   ]
                 },
                 {
@@ -69382,6 +71308,15 @@
                   },
                   "parameters": [
                     "EnemyIndicator5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator7",
                     ""
                   ]
                 },
@@ -69568,7 +71503,7 @@
                   "parameters": [
                     "EnemiesLeft",
                     "=",
-                    "5"
+                    "7"
                   ]
                 },
                 {
@@ -69591,6 +71526,18 @@
                     "",
                     "EnemyMelee",
                     "832+(64*2)",
+                    "64*6",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*2)",
                     "64*3",
                     "\"Units Layer\""
                   ]
@@ -69601,7 +71548,7 @@
                   },
                   "parameters": [
                     "",
-                    "EnemyMelee",
+                    "EnemyRanger",
                     "832+(64*4)",
                     "64*4",
                     "\"Units Layer\""
@@ -69613,8 +71560,8 @@
                   },
                   "parameters": [
                     "",
-                    "EnemyMelee",
-                    "832+(64*1)",
+                    "EnemyRanger",
+                    "832+(64*4)",
                     "64*5",
                     "\"Units Layer\""
                   ]
@@ -69625,7 +71572,19 @@
                   },
                   "parameters": [
                     "",
-                    "EnemyMelee",
+                    "EnemyRanger2",
+                    "832+(64*4)",
+                    "64*5",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger2",
                     "832+(64*3)",
                     "64*7",
                     "\"Units Layer\""
@@ -69664,6 +71623,15 @@
                   },
                   "parameters": [
                     "EnemyIndicator5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator6",
                     ""
                   ]
                 },
@@ -70115,6 +72083,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -70135,6 +72104,980 @@
                     "temp",
                     "=",
                     "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EnemiesLeft",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*3)",
+                    "64*2",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*4)",
+                    "64*4",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*4)",
+                    "64*5",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*4)",
+                    "64*7",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*4)",
+                    "64*8",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator4",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator7",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "+",
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Enemies",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarFilled"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Wave",
+                    "=",
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "=",
+                    "7"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EnemiesLeft",
+                    "=",
+                    "9"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*2)",
+                    "64*1",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*1)",
+                    "64*3",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*1)",
+                    "64*4",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*1)",
+                    "64*6",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*4)",
+                    "64*1",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*3)",
+                    "64*3",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*4)",
+                    "64*6",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger2",
+                    "832+(64*5)",
+                    "64*3",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger2",
+                    "832+(64*5)",
+                    "64*6",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator4",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator6",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "+",
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Enemies",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarFilled"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Wave",
+                    "=",
+                    "9"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "=",
+                    "8"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EnemiesLeft",
+                    "=",
+                    "11"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*2)",
+                    "64*1",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*1)",
+                    "64*3",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*1)",
+                    "64*6",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*2)",
+                    "64*8",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*3)",
+                    "64*4",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyBomber",
+                    "832+(64*3)",
+                    "64*5",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*3)",
+                    "64*1",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*5)",
+                    "64*3",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*4)",
+                    "64*6",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*4)",
+                    "64*8",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*4)",
+                    "64*4",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator4",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator6",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator7",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "+",
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Enemies",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarFilled"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Wave",
+                    "=",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "=",
+                    "9"
                   ]
                 }
               ],
@@ -70853,7 +73796,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ally Buffs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -70872,6 +73814,37 @@
                     "MaxEnergy",
                     "=",
                     "AllyMelee.OriginalMaxEnergy - floor(NumMelees/3)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyMelee",
+                        "MaxEnergy",
+                        "<",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyMelee",
+                        "MaxEnergy",
+                        "=",
+                        "0"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -70907,7 +73880,38 @@
                     "AllyExplosivesExpert",
                     "MaxEnergy",
                     "=",
-                    "AllyExplosivesExpert.OriginalMaxEnergy - NumElves"
+                    "AllyExplosivesExpert.OriginalMaxEnergy - floor(NumElves/2)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyExplosivesExpert",
+                        "MaxEnergy",
+                        "<",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "AllyMelee",
+                        "MaxEnergy",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -71180,7 +74184,7 @@
           "isLocked": false,
           "name": "Test/Debug Layer",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
