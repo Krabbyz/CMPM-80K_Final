@@ -889,6 +889,14 @@
         "name": "assets\\buff.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Enemy_Necromancer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Enemy_Necromancer.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -7357,7 +7365,18 @@
                       ]
                     }
                   ],
-                  "actions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Level 5\"",
+                        ""
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -7373,7 +7392,18 @@
                       ]
                     }
                   ],
-                  "actions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Level 6\"",
+                        ""
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -35642,7 +35672,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Shop",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -55988,7 +56017,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6244537826600276,
+        "zoomFactor": 0.5117784035210409,
         "windowMask": false
       },
       "objectsGroups": [
@@ -88422,7 +88451,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Wall Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -90132,6 +90160,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -93865,7 +93894,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.44819780454105795,
+        "zoomFactor": 0.7876290101674146,
         "windowMask": false
       },
       "objectsGroups": [
@@ -93907,6 +93936,9 @@
             },
             {
               "name": "AllyLeader"
+            },
+            {
+              "name": "EnemyNecromancerBoss"
             }
           ]
         },
@@ -93953,6 +93985,9 @@
             },
             {
               "name": "EnemyHealer"
+            },
+            {
+              "name": "EnemyNecromancerBoss"
             }
           ]
         }
@@ -94575,22 +94610,6 @@
           "x": 844,
           "y": 16,
           "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "Units Layer",
-          "name": "EnemyMelee",
-          "persistentUuid": "7c5ec558-24c6-46a0-afcc-f6bfea7dc7e2",
-          "width": 0,
-          "x": 896,
-          "y": 256,
-          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -95997,13 +96016,13 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Units Layer",
-          "name": "EnemyMelee",
-          "persistentUuid": "0e74b404-1ee7-41ad-b229-5cf819a0fa28",
+          "layer": "",
+          "name": "EnemyNecromancerBoss",
+          "persistentUuid": "202b2416-95b4-474d-b93a-a7b4dbb661f2",
           "width": 0,
-          "x": 896,
-          "y": 64,
-          "zOrder": 12,
+          "x": 1280,
+          "y": 320,
+          "zOrder": 75,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -96320,6 +96339,16 @@
             },
             {
               "name": "ExcludeHeal",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "MovingTick",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "bars",
               "type": "boolean",
               "value": false
             }
@@ -96786,6 +96815,16 @@
             },
             {
               "name": "ExcludeHeal",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "MovingTick",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "bars",
               "type": "boolean",
               "value": false
             }
@@ -102371,7 +102410,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "New Unit!\nLeader\n\n\nNearby allies deal increased damage.",
+          "string": "New Unit!\nLeader\n\nNearby allies deal increased damage.\nHas 2 range.",
           "font": "",
           "textAlignment": "center",
           "characterSize": 20,
@@ -102394,7 +102433,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "New Unit!\nLeader\n\n\nNearby allies deal increased damage.",
+            "text": "New Unit!\nLeader\n\nNearby allies deal increased damage.\nHas 2 range.",
             "font": "",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
@@ -103416,6 +103455,16 @@
               "name": "ExcludeHeal",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "MovingTick",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "bars",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -103597,6 +103646,16 @@
               "name": "ExcludeHeal",
               "type": "boolean",
               "value": true
+            },
+            {
+              "name": "MovingTick",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "bars",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -103721,6 +103780,16 @@
             },
             {
               "name": "ExcludeHeal",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "MovingTick",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "bars",
               "type": "boolean",
               "value": false
             }
@@ -104517,6 +104586,142 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "EnemyNecromancerBoss",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Movement",
+              "type": "number",
+              "value": 64
+            },
+            {
+              "name": "TicksToMove",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "Moving",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Health",
+              "type": "number",
+              "value": 40
+            },
+            {
+              "name": "MaxHealth",
+              "type": "number",
+              "value": 40
+            },
+            {
+              "name": "Energy",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "MaxEnergy",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "AttackUsed",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Range",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "TouchedWall",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "GoldOnDeath",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "name": "ExcludeHeal",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "AttackNum",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "MovingTick",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "bars",
+              "type": "boolean",
+              "value": false
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Enemy_Necromancer.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -104718,6 +104923,9 @@
                 "objectName": "EnemyHealer"
               },
               {
+                "objectName": "EnemyNecromancerBoss"
+              },
+              {
                 "objectName": "EnemyBomberExplosion"
               },
               {
@@ -104820,7 +105028,7 @@
               "parameters": [
                 "Gold",
                 "=",
-                "20"
+                "7000"
               ]
             },
             {
@@ -104830,7 +105038,7 @@
               "parameters": [
                 "EnemiesLeft",
                 "=",
-                "2"
+                "1"
               ]
             },
             {
@@ -105079,7 +105287,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "EnemyIndicator5"
+                "EnemyIndicator4"
               ]
             },
             {
@@ -106057,7 +106265,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Phases",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -106479,12 +106686,64 @@
                           "actions": [
                             {
                               "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "Enemies",
+                                "MovingTick",
+                                "+",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Enemies",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "Enemies",
+                                "Moving",
+                                "True",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "NumberObjectVariable"
+                              },
+                              "parameters": [
+                                "Enemies",
+                                "MovingTick",
+                                ">=",
+                                "Enemies.TicksToMove"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
                                 "value": "MettreX"
                               },
                               "parameters": [
                                 "Enemies",
                                 "-",
                                 "Enemies.Movement"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "Enemies",
+                                "MovingTick",
+                                "=",
+                                "0"
                               ]
                             }
                           ]
@@ -106873,6 +107132,805 @@
                         "textR": 0
                       },
                       "comment": "Enemy Attack"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "EnemyNecromancerBoss",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberObjectVariable"
+                          },
+                          "parameters": [
+                            "EnemyNecromancerBoss",
+                            "Energy",
+                            ">=",
+                            "EnemyNecromancerBoss.MaxEnergy"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberObjectVariable"
+                          },
+                          "parameters": [
+                            "EnemyNecromancerBoss",
+                            "Energy",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackNum",
+                                "=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackUsed",
+                                "False",
+                                "true"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "EnemiesLeft",
+                                "+",
+                                "6"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyMelee",
+                                "EnemyNecromancerBoss.X()-64*1",
+                                "EnemyNecromancerBoss.Y()-320+64*1",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyMelee",
+                                "EnemyNecromancerBoss.X()-64*2",
+                                "EnemyNecromancerBoss.Y()-320+64*3",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyMelee",
+                                "EnemyNecromancerBoss.X()-64*0",
+                                "EnemyNecromancerBoss.Y()-320+64*8",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyHealer",
+                                "EnemyNecromancerBoss.X()+64*1",
+                                "EnemyNecromancerBoss.Y()-320+64*2",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyRanger",
+                                "EnemyNecromancerBoss.X()+64*1",
+                                "EnemyNecromancerBoss.Y()-320+64*3",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyRanger",
+                                "EnemyNecromancerBoss.X()+64*2",
+                                "EnemyNecromancerBoss.Y()-320+64*2",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackNum",
+                                "+",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackUsed",
+                                "True",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackNum",
+                                "=",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackUsed",
+                                "False",
+                                "true"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "EnemiesLeft",
+                                "+",
+                                "4"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyBomber",
+                                "EnemyNecromancerBoss.X()-64*1",
+                                "EnemyNecromancerBoss.Y()-320+64*2",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyBomber",
+                                "EnemyNecromancerBoss.X()-64*0",
+                                "EnemyNecromancerBoss.Y()-320+64*7",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyHealer",
+                                "EnemyNecromancerBoss.X()-64*1",
+                                "EnemyNecromancerBoss.Y()-320+64*4",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyRanger",
+                                "EnemyNecromancerBoss.X()+64*1",
+                                "EnemyNecromancerBoss.Y()-320+64*6",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackNum",
+                                "+",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackUsed",
+                                "True",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackNum",
+                                "=",
+                                "2"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackUsed",
+                                "False",
+                                "true"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "EnemiesLeft",
+                                "+",
+                                "4"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyMelee",
+                                "EnemyNecromancerBoss.X()",
+                                "EnemyNecromancerBoss.Y()-320+64*1",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyMelee",
+                                "EnemyNecromancerBoss.X()",
+                                "EnemyNecromancerBoss.Y()-320+64*2",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyBomber",
+                                "EnemyNecromancerBoss.X()",
+                                "EnemyNecromancerBoss.Y()-320+64*4",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyBomber",
+                                "EnemyNecromancerBoss.X()",
+                                "EnemyNecromancerBoss.Y()-320+64*7",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyRanger",
+                                "EnemyNecromancerBoss.X()",
+                                "EnemyNecromancerBoss.Y()-320+64*8",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackNum",
+                                "+",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackUsed",
+                                "True",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackNum",
+                                "=",
+                                "3"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackUsed",
+                                "False",
+                                "true"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "EnemiesLeft",
+                                "+",
+                                "6"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyMelee",
+                                "EnemyNecromancerBoss.X()-64*2",
+                                "EnemyNecromancerBoss.Y()-320+64*3",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyMelee",
+                                "EnemyNecromancerBoss.X()-64*1",
+                                "EnemyNecromancerBoss.Y()-320+64*8",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyHealer",
+                                "EnemyNecromancerBoss.X()-64*1",
+                                "EnemyNecromancerBoss.Y()-320+64*3",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyHealer",
+                                "EnemyNecromancerBoss.X()-64*0",
+                                "EnemyNecromancerBoss.Y()-320+64*8",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyRanger",
+                                "EnemyNecromancerBoss.X()-64*0",
+                                "EnemyNecromancerBoss.Y()-320+64*3",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyRanger",
+                                "EnemyNecromancerBoss.X()+64*1",
+                                "EnemyNecromancerBoss.Y()-320+64*8",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackNum",
+                                "+",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackUsed",
+                                "True",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackNum",
+                                "=",
+                                "4"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackUsed",
+                                "False",
+                                "true"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "EnemiesLeft",
+                                "+",
+                                "5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyMelee",
+                                "EnemyNecromancerBoss.X()-64*2",
+                                "EnemyNecromancerBoss.Y()-320+64*4",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyRanger",
+                                "EnemyNecromancerBoss.X()-64*0",
+                                "EnemyNecromancerBoss.Y()-320+64*2",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyRanger",
+                                "EnemyNecromancerBoss.X()-64*0",
+                                "EnemyNecromancerBoss.Y()-320+64*7",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyRanger2",
+                                "EnemyNecromancerBoss.X()+64*1",
+                                "EnemyNecromancerBoss.Y()-320+64*5",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnemyRanger2",
+                                "EnemyNecromancerBoss.X()+64*1",
+                                "EnemyNecromancerBoss.Y()-320+64*3",
+                                "\"Units Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackNum",
+                                "=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "EnemyNecromancerBoss",
+                                "AttackUsed",
+                                "True",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Enemies",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "Enemies",
+                                "bars",
+                                "=",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "HealthBarEmpty",
+                                "Enemies.X() + 2",
+                                "Enemies.Y() - 16",
+                                "\"Resource Bar Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "HealthBarFilled",
+                                "Enemies.X() + 2",
+                                "Enemies.Y() - 16",
+                                "\"Resource Bar Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnergyBarEmpty",
+                                "Enemies.X() + 2",
+                                "Enemies.Y() - 9",
+                                "\"Resource Bar Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "EnergyBarFilled",
+                                "Enemies.X() + 2",
+                                "Enemies.Y() - 9",
+                                "\"Resource Bar Layer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::LinkObjects"
+                              },
+                              "parameters": [
+                                "",
+                                "HealthBarEmpty",
+                                "Enemies"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::LinkObjects"
+                              },
+                              "parameters": [
+                                "",
+                                "HealthBarFilled",
+                                "Enemies"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::LinkObjects"
+                              },
+                              "parameters": [
+                                "",
+                                "EnergyBarEmpty",
+                                "Enemies"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::LinkObjects"
+                              },
+                              "parameters": [
+                                "",
+                                "EnergyBarFilled",
+                                "Enemies"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Cache"
+                              },
+                              "parameters": [
+                                "HealthBarEmpty"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Cache"
+                              },
+                              "parameters": [
+                                "HealthBarFilled"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Cache"
+                              },
+                              "parameters": [
+                                "EnergyBarEmpty"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Cache"
+                              },
+                              "parameters": [
+                                "EnergyBarFilled"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "Enemies",
+                                "bars",
+                                "True",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
                       "type": "BuiltinCommonInstructions::ForEach",
@@ -107884,7 +108942,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -108448,22 +109505,45 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Wall Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "ADD SOUND HERE"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "EnemyNecromancerBoss",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "-",
+                    "20"
+                  ]
+                }
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::ForEach",
@@ -108848,7 +109928,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Level 5\"",
+                    "\"Level 6\"",
                     ""
                   ]
                 }
@@ -108950,8 +110030,8 @@
                   "parameters": [
                     "",
                     "AllyMelee",
-                    "RandomInRange(-700, -128)",
-                    "RandomInRange(140, 592)",
+                    "RandomInRange(-600, -128)",
+                    "RandomInRange(64, 592)",
                     "\"Units Layer\""
                   ]
                 },
@@ -109169,8 +110249,8 @@
                   "parameters": [
                     "",
                     "AllyRanger",
-                    "RandomInRange(-700, -128)",
-                    "RandomInRange(140, 592)",
+                    "RandomInRange(-600, -128)",
+                    "RandomInRange(64, 592)",
                     "\"Units Layer\""
                   ]
                 },
@@ -109410,8 +110490,8 @@
                   "parameters": [
                     "",
                     "AllyExplosivesExpert",
-                    "RandomInRange(-700, -128)",
-                    "RandomInRange(140, 592)",
+                    "RandomInRange(-600, -128)",
+                    "RandomInRange(64, 592)",
                     "\"Units Layer\""
                   ]
                 },
@@ -109588,8 +110668,8 @@
                   "parameters": [
                     "",
                     "AllyTinkerer",
-                    "RandomInRange(-700, -128)",
-                    "RandomInRange(140, 592)",
+                    "RandomInRange(-600, -128)",
+                    "RandomInRange(64, 592)",
                     "\"Units Layer\""
                   ]
                 },
@@ -109807,8 +110887,8 @@
                   "parameters": [
                     "",
                     "AllyMerchant",
-                    "RandomInRange(-700, -128)",
-                    "RandomInRange(140, 592)",
+                    "RandomInRange(-600, -128)",
+                    "RandomInRange(64, 592)",
                     "\"Units Layer\""
                   ]
                 },
@@ -109925,8 +111005,8 @@
                   "parameters": [
                     "",
                     "AllyArcanist",
-                    "RandomInRange(-700, -128)",
-                    "RandomInRange(140, 592)",
+                    "RandomInRange(-600, -128)",
+                    "RandomInRange(64, 592)",
                     "\"Units Layer\""
                   ]
                 },
@@ -110144,8 +111224,8 @@
                   "parameters": [
                     "",
                     "AllyLeader",
-                    "RandomInRange(-700, -128)",
-                    "RandomInRange(140, 592)",
+                    "RandomInRange(-600, -128)",
+                    "RandomInRange(64, 592)",
                     "\"Units Layer\""
                   ]
                 },
@@ -110418,7 +111498,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -110562,7 +111641,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -113064,7 +114142,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "TESTING/DEBUG",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -113667,7 +114744,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ally Buffs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
