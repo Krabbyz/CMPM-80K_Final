@@ -897,6 +897,36 @@
         "name": "assets\\Enemy_Necromancer.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/button_click.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\button_click.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bow.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\bow.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fire.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\fire.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -944,7 +974,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2636457673770831,
+        "zoomFactor": 0.379712100194798,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2134,6 +2164,18 @@
                 "\"Level Select\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\button_click.wav",
+                "",
+                "100 * (SFXVolume/100)",
+                ""
+              ]
             }
           ]
         },
@@ -2160,6 +2202,18 @@
                 "-",
                 "1280",
                 "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\button_click.wav",
+                "",
+                "100 * (SFXVolume/100)",
                 ""
               ]
             }
@@ -2190,6 +2244,18 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\button_click.wav",
+                "",
+                "100 * (SFXVolume/100)",
+                ""
+              ]
             }
           ]
         },
@@ -2216,6 +2282,18 @@
                 "=",
                 "640",
                 "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\button_click.wav",
+                "",
+                "100 * (SFXVolume/100)",
                 ""
               ]
             }
@@ -2319,7 +2397,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7370816317994106,
+        "zoomFactor": 0.44819780454104013,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -6015,6 +6093,18 @@
                     "\"UI\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -6079,6 +6169,18 @@
                     "\"UI\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -6105,6 +6207,18 @@
                     "\"Main Menu\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             }
@@ -6116,7 +6230,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Dots and Flags",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6473,6 +6586,18 @@
                     "=",
                     "\"Greetings, General. Urgent word came from the Eastern Kingdom of Eryndor: their capital is under siege and calls for our aid. Rally your forces and prepare to march east, for our allies’ fate hangs in the balance. Our King has supplied you with funds from the royal treasury to equip you on your journey.\n\nGood luck, and may victory be ours!\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -6530,6 +6655,18 @@
                     "Text",
                     "=",
                     "\"The enemy has advanced farther west than we realized, breaching lands once thought safe. This spells disaster for our allies. We must seek the elves, their advanced weaponry and battlefield precision will aid us greatly in our fight.\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -6589,6 +6726,18 @@
                     "=",
                     "\"You’ve reached Ilvathar, the Elven Clockwork City—an architectural marvel teeming with centuries-old knowledge. Yet enemy forces have infiltrated the outer districts. The elves agree to aid us, but only if we help purge the invaders from their land.\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -6646,6 +6795,18 @@
                     "Text",
                     "=",
                     "\"The port city of Southwind is ablaze. Enemy vessels choke the harbor while civilians flee inland. We must secure the docks, assist the defenders, and find a ship to carry us across the sea. Our path forward depends on reclaiming this vital passage.\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -6705,6 +6866,18 @@
                     "=",
                     "\"Eryndor’s outer defenses have fallen. The survivors gather at a hidden resistance camp along the coast. Morale is shattered, but within these ranks are the arcane mages. If we can protect the last of them, their power may yet turn the tide.\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -6762,6 +6935,18 @@
                     "Text",
                     "=",
                     "\"At last, we reach Eryndor—the capital, a city built atop a grand source of ancient power. The enemy converges, seeking to claim it. We must rally the last of our forces and make a final stand.\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -7225,6 +7410,18 @@
                     "False",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -7241,7 +7438,20 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -17957,6 +18167,18 @@
                     "=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -18170,6 +18392,18 @@
                     "\"Test/Debug Layer\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -18356,6 +18590,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Dragging",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19796,6 +20031,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -20703,6 +20939,18 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -20744,6 +20992,18 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -21007,6 +21267,18 @@
                     "test",
                     "Units"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -21244,6 +21516,18 @@
                   },
                   "parameters": [
                     "Range"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -22354,6 +22638,18 @@
                   "parameters": [
                     "Tip6Arrow"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -22680,6 +22976,18 @@
                     "\"Battlefield\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -22826,6 +23134,18 @@
                   "parameters": [
                     "CameraButton",
                     "\"Shop\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
@@ -23017,6 +23337,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ally Buffs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -23570,6 +23891,18 @@
                     "no",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             }
@@ -23856,7 +24189,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3797121001948067,
+        "zoomFactor": 0.40575189059439704,
         "windowMask": false
       },
       "objectsGroups": [
@@ -25831,6 +26164,11 @@
               "name": "OriginalX",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -26077,6 +26415,11 @@
               "name": "GoldOnDeath",
               "type": "number",
               "value": 1
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -26538,6 +26881,11 @@
               "name": "GoldOnDeath",
               "type": "number",
               "value": 2
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -26719,6 +27067,11 @@
               "name": "OriginalMaxEnergy",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -32884,6 +33237,18 @@
                     "=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -33095,6 +33460,18 @@
                     "+",
                     "720",
                     "\"Test/Debug Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
@@ -33915,7 +34292,7 @@
                     "",
                     "\"Tick\"",
                     ">=",
-                    "0.00006"
+                    "0.6"
                   ]
                 }
               ],
@@ -34134,18 +34511,6 @@
                       "actions": [],
                       "events": [
                         {
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 109,
-                            "g": 230,
-                            "r": 255,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
-                          },
-                          "comment": "ADD ATTACK SOUND HERE"
-                        },
-                        {
                           "type": "BuiltinCommonInstructions::ForEach",
                           "object": "Enemies",
                           "conditions": [
@@ -34193,17 +34558,67 @@
                                 "True",
                                 "1"
                               ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\meleeHit.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
                             },
                             {
-                              "type": {
-                                "value": "PlaySound"
-                              },
-                              "parameters": [
-                                "",
-                                "assets\\meleeHit.wav",
-                                "",
-                                "SFXVolume",
-                                ""
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\bow.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
                               ]
                             }
                           ]
@@ -34251,18 +34666,6 @@
                       ],
                       "actions": [],
                       "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 109,
-                            "g": 230,
-                            "r": 255,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
-                          },
-                          "comment": "ADD ATTACK SOUND HERE"
-                        },
                         {
                           "type": "BuiltinCommonInstructions::ForEach",
                           "object": "Allies",
@@ -34322,6 +34725,68 @@
                                 "",
                                 "SFXVolume",
                                 ""
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemies",
+                                    "AttackNoise",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\meleeHit.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemies",
+                                    "AttackNoise",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\bow.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
                               ]
                             }
                           ]
@@ -34436,18 +34901,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "ADD DEATH SOUND HERE"
                     },
                     {
                       "type": "BuiltinCommonInstructions::ForEach",
@@ -34704,6 +35157,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -35611,6 +36065,18 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -35654,6 +36120,18 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -35672,6 +36150,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Shop",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -35891,6 +36370,18 @@
                     "NumMelees",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -36132,6 +36623,18 @@
                     "",
                     "test",
                     "Units"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -37822,7 +38325,20 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -38065,6 +38581,18 @@
                     "\"Battlefield\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -38211,6 +38739,18 @@
                   "parameters": [
                     "CameraButton",
                     "\"Shop\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
@@ -38493,6 +39033,18 @@
               "parameters": [
                 "Button1",
                 "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\button_click.wav",
+                "",
+                "100 * (SFXVolume/100)",
                 ""
               ]
             }
@@ -38778,7 +39330,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.36732575450589644,
+        "zoomFactor": 0.39251611754883786,
         "windowMask": false
       },
       "objectsGroups": [
@@ -40863,6 +41415,11 @@
               "name": "OriginalX",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -41109,6 +41666,11 @@
               "name": "GoldOnDeath",
               "type": "number",
               "value": 1
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -41570,6 +42132,11 @@
               "name": "GoldOnDeath",
               "type": "number",
               "value": 2
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -41751,6 +42318,11 @@
               "name": "OriginalMaxEnergy",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -47330,6 +47902,11 @@
               "name": "OriginalX",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -47911,12 +48488,12 @@
             {
               "name": "Health",
               "type": "number",
-              "value": 8
+              "value": 12
             },
             {
               "name": "MaxHealth",
               "type": "number",
-              "value": 8
+              "value": 12
             },
             {
               "name": "Energy",
@@ -47955,6 +48532,11 @@
             },
             {
               "name": "OriginalX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AttackNoise",
               "type": "number",
               "value": 0
             }
@@ -48226,6 +48808,11 @@
               "name": "GoldOnDeath",
               "type": "number",
               "value": 3
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -49017,6 +49604,18 @@
                     "=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -49228,6 +49827,18 @@
                     "+",
                     "720",
                     "\"Test/Debug Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
@@ -50009,7 +50620,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -50380,18 +50990,6 @@
                       "actions": [],
                       "events": [
                         {
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 109,
-                            "g": 230,
-                            "r": 255,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
-                          },
-                          "comment": "ADD ATTACK SOUND HERE"
-                        },
-                        {
                           "type": "BuiltinCommonInstructions::ForEach",
                           "object": "Enemies",
                           "conditions": [
@@ -50439,17 +51037,67 @@
                                 "True",
                                 "1"
                               ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\meleeHit.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
                             },
                             {
-                              "type": {
-                                "value": "PlaySound"
-                              },
-                              "parameters": [
-                                "",
-                                "assets\\meleeHit.wav",
-                                "",
-                                "SFXVolume",
-                                ""
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\bow.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
                               ]
                             }
                           ]
@@ -50498,18 +51146,6 @@
                       "actions": [],
                       "events": [
                         {
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 109,
-                            "g": 230,
-                            "r": 255,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
-                          },
-                          "comment": "ADD ATTACK SOUND HERE"
-                        },
-                        {
                           "type": "BuiltinCommonInstructions::ForEach",
                           "object": "Allies",
                           "conditions": [
@@ -50557,17 +51193,67 @@
                                 "True",
                                 "1"
                               ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\meleeHit.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
                             },
                             {
-                              "type": {
-                                "value": "PlaySound"
-                              },
-                              "parameters": [
-                                "",
-                                "assets\\meleeHit.wav",
-                                "",
-                                "SFXVolume",
-                                ""
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\bow.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
                               ]
                             }
                           ]
@@ -50683,6 +51369,18 @@
                           "parameters": [
                             "EnemyBomberExplosion",
                             "\"Explosion\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\explosion_sound.wav",
+                            "",
+                            "80 * (SFXVolume/100)",
+                            ""
                           ]
                         }
                       ]
@@ -50802,18 +51500,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "ADD DEATH SOUND HERE"
                     },
                     {
                       "type": "BuiltinCommonInstructions::ForEach",
@@ -51136,6 +51822,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -51653,18 +52340,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "ADD SOUND HERE"
-            },
-            {
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Enemies",
               "conditions": [
@@ -52043,6 +52718,18 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -52084,6 +52771,18 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -52324,6 +53023,18 @@
                     "NumMelees",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -52566,6 +53277,18 @@
                     "test",
                     "Units"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -52743,6 +53466,18 @@
                     "NumElves",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -52963,6 +53698,18 @@
                     "+",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -53020,6 +53767,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -54865,7 +55613,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "TESTING/DEBUG",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -54917,7 +55664,20 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -55160,6 +55920,18 @@
                     "\"Battlefield\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -55306,6 +56078,18 @@
                   "parameters": [
                     "CameraButton",
                     "\"Shop\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
@@ -55468,6 +56252,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ally Buffs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -55604,7 +56389,20 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\button_click.wav",
+                "",
+                "100 * (SFXVolume/100)",
+                ""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -55649,7 +56447,7 @@
                     "NewText",
                     "Text",
                     "=",
-                    "\"New Units!\nTinkerer (Elf)\n\nRepairs the wall slightly at the end of every round.\nSlow attack speed.\""
+                    "\"New Units!\nTinkerer (Elf)\n\nRepairs the wall slightly at the end of every round.\nHigh health but slow attack speed.\""
                   ]
                 },
                 {
@@ -56017,7 +56815,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210409,
+        "zoomFactor": 0.44819780454105607,
         "windowMask": false
       },
       "objectsGroups": [
@@ -58151,6 +58949,11 @@
               "name": "OriginalX",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -58397,6 +59200,11 @@
               "name": "GoldOnDeath",
               "type": "number",
               "value": 1
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -58858,6 +59666,11 @@
               "name": "GoldOnDeath",
               "type": "number",
               "value": 2
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -59039,6 +59852,11 @@
               "name": "OriginalMaxEnergy",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -64618,6 +65436,11 @@
               "name": "OriginalX",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -64899,12 +65722,12 @@
             {
               "name": "Health",
               "type": "number",
-              "value": 8
+              "value": 12
             },
             {
               "name": "MaxHealth",
               "type": "number",
-              "value": 8
+              "value": 12
             },
             {
               "name": "Energy",
@@ -64943,6 +65766,11 @@
             },
             {
               "name": "OriginalX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AttackNoise",
               "type": "number",
               "value": 0
             }
@@ -65210,6 +66038,11 @@
             },
             {
               "name": "OriginalX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AttackNoise",
               "type": "number",
               "value": 0
             }
@@ -65481,6 +66314,11 @@
               "name": "GoldOnDeath",
               "type": "number",
               "value": 2
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -65662,6 +66500,11 @@
               "name": "GoldOnDeath",
               "type": "number",
               "value": 2
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -66415,6 +67258,18 @@
                     "=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -66626,6 +67481,18 @@
                     "+",
                     "720",
                     "\"Test/Debug Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
@@ -67407,7 +68274,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -67778,18 +68644,6 @@
                       "actions": [],
                       "events": [
                         {
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 109,
-                            "g": 230,
-                            "r": 255,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
-                          },
-                          "comment": "ADD ATTACK SOUND HERE"
-                        },
-                        {
                           "type": "BuiltinCommonInstructions::ForEach",
                           "object": "Enemies",
                           "conditions": [
@@ -67837,17 +68691,67 @@
                                 "True",
                                 "1"
                               ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\meleeHit.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
                             },
                             {
-                              "type": {
-                                "value": "PlaySound"
-                              },
-                              "parameters": [
-                                "",
-                                "assets\\meleeHit.wav",
-                                "",
-                                "SFXVolume",
-                                ""
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\bow.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
                               ]
                             }
                           ]
@@ -67896,18 +68800,6 @@
                       "actions": [],
                       "events": [
                         {
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 109,
-                            "g": 230,
-                            "r": 255,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
-                          },
-                          "comment": "ADD ATTACK SOUND HERE"
-                        },
-                        {
                           "type": "BuiltinCommonInstructions::ForEach",
                           "object": "Allies",
                           "conditions": [
@@ -67955,17 +68847,67 @@
                                 "True",
                                 "1"
                               ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemies",
+                                    "AttackNoise",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\meleeHit.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
                             },
                             {
-                              "type": {
-                                "value": "PlaySound"
-                              },
-                              "parameters": [
-                                "",
-                                "assets\\meleeHit.wav",
-                                "",
-                                "SFXVolume",
-                                ""
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemies",
+                                    "AttackNoise",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\bow.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
                               ]
                             }
                           ]
@@ -68081,6 +69023,18 @@
                           "parameters": [
                             "EnemyBomberExplosion",
                             "\"Explosion\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\explosion_sound.wav",
+                            "",
+                            "80 * (SFXVolume/100)",
+                            ""
                           ]
                         }
                       ]
@@ -68563,6 +69517,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -69470,6 +70425,18 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -69511,6 +70478,18 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -69751,6 +70730,18 @@
                     "NumMelees",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -69993,6 +70984,18 @@
                     "test",
                     "Units"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -70170,6 +71173,18 @@
                     "NumElves",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -70390,6 +71405,18 @@
                     "+",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -70507,6 +71534,18 @@
                     "NumMerchants",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -71386,15 +72425,6 @@
                   },
                   "parameters": [
                     "EnemyIndicator4",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator5",
                     ""
                   ]
                 },
@@ -73280,7 +74310,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "TESTING/DEBUG",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -73332,7 +74361,20 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -73575,6 +74617,18 @@
                     "\"Battlefield\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -73721,6 +74775,18 @@
                   "parameters": [
                     "CameraButton",
                     "\"Shop\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
@@ -74032,7 +75098,20 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\button_click.wav",
+                "",
+                "100 * (SFXVolume/100)",
+                ""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -74356,7 +75435,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4789341884535485,
+        "zoomFactor": 0.419433978275927,
         "windowMask": false
       },
       "objectsGroups": [
@@ -76523,6 +77602,11 @@
               "name": "OriginalX",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -76774,6 +77858,11 @@
               "name": "ExcludeHeal",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -77240,6 +78329,11 @@
               "name": "ExcludeHeal",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -77421,6 +78515,11 @@
               "name": "OriginalX",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -83000,6 +84099,11 @@
               "name": "OriginalX",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -83281,12 +84385,12 @@
             {
               "name": "Health",
               "type": "number",
-              "value": 8
+              "value": 12
             },
             {
               "name": "MaxHealth",
               "type": "number",
-              "value": 8
+              "value": 12
             },
             {
               "name": "Energy",
@@ -83325,6 +84429,11 @@
             },
             {
               "name": "OriginalX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AttackNoise",
               "type": "number",
               "value": 0
             }
@@ -83592,6 +84701,11 @@
             },
             {
               "name": "OriginalX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AttackNoise",
               "type": "number",
               "value": 0
             }
@@ -83868,6 +84982,11 @@
               "name": "ExcludeHeal",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -84049,6 +85168,11 @@
               "name": "ExcludeHeal",
               "type": "boolean",
               "value": true
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 2
             }
           ],
           "effects": [],
@@ -84175,6 +85299,11 @@
               "name": "ExcludeHeal",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -84361,6 +85490,11 @@
               "name": "ArcanistHeal",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -85369,6 +86503,18 @@
                     "=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -85580,6 +86726,18 @@
                     "+",
                     "720",
                     "\"Test/Debug Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
@@ -86871,17 +88029,67 @@
                                 "True",
                                 "1"
                               ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\meleeHit.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
                             },
                             {
-                              "type": {
-                                "value": "PlaySound"
-                              },
-                              "parameters": [
-                                "",
-                                "assets\\meleeHit.wav",
-                                "",
-                                "SFXVolume",
-                                ""
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\bow.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
                               ]
                             }
                           ]
@@ -86977,21 +88185,99 @@
                                 "True",
                                 "1"
                               ]
-                            },
-                            {
-                              "type": {
-                                "value": "PlaySound"
-                              },
-                              "parameters": [
-                                "",
-                                "assets\\meleeHit.wav",
-                                "",
-                                "SFXVolume",
-                                ""
-                              ]
                             }
                           ],
                           "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemies",
+                                    "AttackNoise",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\meleeHit.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemies",
+                                    "AttackNoise",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\bow.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemies",
+                                    "AttackNoise",
+                                    "=",
+                                    "2"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\fire.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
                             {
                               "type": "BuiltinCommonInstructions::ForEach",
                               "object": "EnemyHealer",
@@ -87177,7 +88463,7 @@
                             "",
                             "assets\\explosion_sound.wav",
                             "",
-                            "40 * (SFXVolume/100)",
+                            "80 * (SFXVolume/100)",
                             ""
                           ]
                         }
@@ -88451,22 +89737,11 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Wall Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "ADD SOUND HERE"
-            },
             {
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Enemies",
@@ -88846,6 +90121,18 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -88887,6 +90174,18 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -89127,6 +90426,18 @@
                     "NumMelees",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -89369,6 +90680,18 @@
                     "test",
                     "Units"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -89546,6 +90869,18 @@
                     "NumElves",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -89766,6 +91101,18 @@
                     "+",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -89883,6 +91230,18 @@
                     "NumMerchants",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -90102,6 +91461,18 @@
                     "NumArcanists",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -92858,7 +94229,20 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -93101,6 +94485,18 @@
                     "\"Battlefield\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -93247,6 +94643,18 @@
                   "parameters": [
                     "CameraButton",
                     "\"Shop\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
@@ -93570,7 +94978,20 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\button_click.wav",
+                "",
+                "100 * (SFXVolume/100)",
+                ""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -93894,7 +95315,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7876290101674146,
+        "zoomFactor": 0.37971210019481216,
         "windowMask": false
       },
       "objectsGroups": [
@@ -96017,12 +97438,60 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "EnemyNecromancerBoss",
-          "persistentUuid": "202b2416-95b4-474d-b93a-a7b4dbb661f2",
+          "name": "EnemyMelee",
+          "persistentUuid": "b9125da9-4428-4c47-b26f-3a4774b4d2aa",
           "width": 0,
-          "x": 1280,
-          "y": 320,
-          "zOrder": 75,
+          "x": 960,
+          "y": 64,
+          "zOrder": 76,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "EnemyMelee",
+          "persistentUuid": "a219e8ba-256c-44fd-84c9-561607b92b4d",
+          "width": 0,
+          "x": 1024,
+          "y": 256,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "EnemyMelee",
+          "persistentUuid": "80b34075-dba4-44e4-a5c8-56889532df96",
+          "width": 0,
+          "x": 896,
+          "y": 448,
+          "zOrder": 78,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "EnemyRanger",
+          "persistentUuid": "82918e29-d4f6-4a6c-bbe7-a23e9951b8a8",
+          "width": 0,
+          "x": 1088,
+          "y": 384,
+          "zOrder": 79,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -96088,6 +97557,11 @@
             },
             {
               "name": "OriginalX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AttackNoise",
               "type": "number",
               "value": 0
             }
@@ -96351,6 +97825,11 @@
               "name": "bars",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -96827,6 +98306,11 @@
               "name": "bars",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -97006,6 +98490,11 @@
             },
             {
               "name": "OriginalX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AttackNoise",
               "type": "number",
               "value": 0
             }
@@ -102587,6 +104076,11 @@
               "name": "OriginalX",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -102868,12 +104362,12 @@
             {
               "name": "Health",
               "type": "number",
-              "value": 8
+              "value": 12
             },
             {
               "name": "MaxHealth",
               "type": "number",
-              "value": 8
+              "value": 12
             },
             {
               "name": "Energy",
@@ -102912,6 +104406,11 @@
             },
             {
               "name": "OriginalX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AttackNoise",
               "type": "number",
               "value": 0
             }
@@ -103179,6 +104678,11 @@
             },
             {
               "name": "OriginalX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AttackNoise",
               "type": "number",
               "value": 0
             }
@@ -103465,6 +104969,11 @@
               "name": "bars",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -103656,6 +105165,11 @@
               "name": "bars",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 2
             }
           ],
           "effects": [],
@@ -103792,6 +105306,11 @@
               "name": "bars",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -103978,6 +105497,11 @@
               "name": "ArcanistHeal",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -104303,6 +105827,11 @@
             },
             {
               "name": "OriginalX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AttackNoise",
               "type": "number",
               "value": 0
             }
@@ -104668,6 +106197,11 @@
               "name": "bars",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "AttackNoise",
+              "type": "number",
+              "value": 2
             }
           ],
           "effects": [],
@@ -105028,7 +106562,7 @@
               "parameters": [
                 "Gold",
                 "=",
-                "7000"
+                "25"
               ]
             },
             {
@@ -105038,7 +106572,7 @@
               "parameters": [
                 "EnemiesLeft",
                 "=",
-                "1"
+                "4"
               ]
             },
             {
@@ -105263,14 +106797,6 @@
                 "value": "Cache"
               },
               "parameters": [
-                "EnemyIndicator1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
                 "EnemyIndicator2"
               ]
             },
@@ -105287,23 +106813,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "EnemyIndicator4"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "EnemyIndicator6"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "EnemyIndicator7"
+                "EnemyIndicator5"
               ]
             },
             {
@@ -105479,6 +106989,18 @@
                     "Phase",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ],
@@ -105691,6 +107213,18 @@
                     "+",
                     "720",
                     "\"Test/Debug Layer\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
@@ -106265,6 +107799,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Phases",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -107072,21 +108607,99 @@
                                 "True",
                                 "1"
                               ]
-                            },
-                            {
-                              "type": {
-                                "value": "PlaySound"
-                              },
-                              "parameters": [
-                                "",
-                                "assets\\meleeHit.wav",
-                                "",
-                                "SFXVolume",
-                                ""
-                              ]
                             }
                           ],
                           "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\meleeHit.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\bow.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Allies",
+                                    "AttackNoise",
+                                    "=",
+                                    "2"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\fire.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
                             {
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
@@ -107220,7 +108833,7 @@
                                 "",
                                 "EnemyMelee",
                                 "EnemyNecromancerBoss.X()-64*2",
-                                "EnemyNecromancerBoss.Y()-320+64*3",
+                                "EnemyNecromancerBoss.Y()-320+64*4",
                                 "\"Units Layer\""
                               ]
                             },
@@ -107256,7 +108869,7 @@
                                 "",
                                 "EnemyRanger",
                                 "EnemyNecromancerBoss.X()+64*1",
-                                "EnemyNecromancerBoss.Y()-320+64*3",
+                                "EnemyNecromancerBoss.Y()-320+64*7",
                                 "\"Units Layer\""
                               ]
                             },
@@ -108009,21 +109622,99 @@
                                 "True",
                                 "1"
                               ]
-                            },
-                            {
-                              "type": {
-                                "value": "PlaySound"
-                              },
-                              "parameters": [
-                                "",
-                                "assets\\meleeHit.wav",
-                                "",
-                                "SFXVolume",
-                                ""
-                              ]
                             }
                           ],
                           "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemies",
+                                    "AttackNoise",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\meleeHit.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemies",
+                                    "AttackNoise",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\bow.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemies",
+                                    "AttackNoise",
+                                    "=",
+                                    "2"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "assets\\fire.wav",
+                                    "",
+                                    "SFXVolume",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
                             {
                               "type": "BuiltinCommonInstructions::ForEach",
                               "object": "EnemyHealer",
@@ -108209,7 +109900,7 @@
                             "",
                             "assets\\explosion_sound.wav",
                             "",
-                            "40 * (SFXVolume/100)",
+                            "80 * (SFXVolume/100)",
                             ""
                           ]
                         }
@@ -108942,6 +110633,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -109505,6 +111197,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Wall Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -109924,6 +111617,18 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -109965,6 +111670,18 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -110204,6 +111921,18 @@
                     "NumMelees",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -110446,6 +112175,18 @@
                     "test",
                     "Units"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -110623,6 +112364,18 @@
                     "NumElves",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -110843,6 +112596,18 @@
                     "+",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -110960,6 +112725,18 @@
                     "NumMerchants",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -111179,6 +112956,18 @@
                     "NumArcanists",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
                   ]
                 }
               ]
@@ -111441,6 +113230,18 @@
                   "parameters": [
                     "LeaderBuff"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -111498,6 +113299,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -111514,7 +113316,7 @@
                     "WaveText",
                     "Text",
                     "=",
-                    "\"Wave: \" + Wave + \"/9\""
+                    "\"Wave: \" + Wave + \"/8\""
                   ]
                 }
               ],
@@ -111542,7 +113344,7 @@
                         "WaveText",
                         "Text",
                         "=",
-                        "\"Wave: 9/9\""
+                        "\"Wave: 8/8\""
                       ]
                     }
                   ]
@@ -111641,6 +113443,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -111924,7 +113727,7 @@
                   "parameters": [
                     "EnemiesLeft",
                     "=",
-                    "5"
+                    "7"
                   ]
                 },
                 {
@@ -111957,9 +113760,21 @@
                   },
                   "parameters": [
                     "",
+                    "EnemyBomber",
+                    "832+(64*2)",
+                    "64*6",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
                     "EnemyHealer",
                     "832+(64*2)",
-                    "64*3",
+                    "64*5",
                     "\"Units Layer\""
                   ]
                 },
@@ -111971,7 +113786,7 @@
                     "",
                     "EnemyRanger",
                     "832+(64*4)",
-                    "64*4",
+                    "64*2",
                     "\"Units Layer\""
                   ]
                 },
@@ -111982,8 +113797,20 @@
                   "parameters": [
                     "",
                     "EnemyRanger",
-                    "832+(64*4)",
-                    "64*7",
+                    "832+(64*5)",
+                    "64*6",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*2)",
+                    "64*8",
                     "\"Units Layer\""
                   ]
                 },
@@ -112001,15 +113828,6 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "EnemyIndicator3",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
                     "EnemyIndicator4",
                     ""
                   ]
@@ -112019,7 +113837,25 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "EnemyIndicator7",
+                    "EnemyIndicator5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator6",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator8",
                     ""
                   ]
                 },
@@ -112197,7 +114033,7 @@
                   "parameters": [
                     "EnemiesLeft",
                     "=",
-                    "6"
+                    "7"
                   ]
                 },
                 {
@@ -112209,6 +114045,18 @@
                     "EnemyMelee",
                     "832+(64*1)",
                     "64*5",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyMelee",
+                    "832+(64*1)",
+                    "64*6",
                     "\"Units Layer\""
                   ]
                 },
@@ -112256,7 +114104,7 @@
                     "",
                     "EnemyHealer",
                     "832+(64*3)",
-                    "64*5",
+                    "64*6",
                     "\"Units Layer\""
                   ]
                 },
@@ -112268,7 +114116,7 @@
                     "",
                     "EnemyRanger",
                     "832+(64*5)",
-                    "64*4",
+                    "64*5",
                     "\"Units Layer\""
                   ]
                 },
@@ -112296,6 +114144,15 @@
                   },
                   "parameters": [
                     "EnemyIndicator5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator6",
                     ""
                   ]
                 },
@@ -112482,7 +114339,7 @@
                   "parameters": [
                     "EnemiesLeft",
                     "=",
-                    "7"
+                    "8"
                   ]
                 },
                 {
@@ -112515,9 +114372,21 @@
                   },
                   "parameters": [
                     "",
+                    "EnemyMelee",
+                    "832+(64*2)",
+                    "64*8",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
                     "EnemyHealer",
                     "832+(64*2)",
-                    "64*3",
+                    "64*2",
                     "\"Units Layer\""
                   ]
                 },
@@ -112779,7 +114648,7 @@
                   "parameters": [
                     "EnemiesLeft",
                     "=",
-                    "8"
+                    "10"
                   ]
                 },
                 {
@@ -112812,287 +114681,8 @@
                   },
                   "parameters": [
                     "",
-                    "EnemyHealer",
-                    "832+(64*2)",
-                    "64*2",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyHealer",
-                    "832+(64*2)",
-                    "64*6",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyRanger",
-                    "832+(64*3)",
-                    "64*2",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyRanger",
-                    "832+(64*3)",
-                    "64*6",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyRanger2",
-                    "832+(64*4)",
-                    "64*2",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyRanger2",
-                    "832+(64*4)",
-                    "64*6",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator2",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator6",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "temp",
-                    "+",
-                    "1"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "Enemies",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarEmpty",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 16",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarFilled",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 16",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarEmpty",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 9",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarFilled",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 9",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarEmpty",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarFilled",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarEmpty",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarFilled",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "HealthBarEmpty"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "HealthBarFilled"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "EnergyBarEmpty"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "EnergyBarFilled"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Wave",
-                    "=",
-                    "7"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "temp",
-                    "=",
-                    "6"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "EnemiesLeft",
-                    "=",
-                    "6"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
                     "EnemyBomber",
-                    "832+(64*3)",
-                    "64*2",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyBomber",
-                    "832+(64*4)",
+                    "832+(64*1)",
                     "64*4",
                     "\"Units Layer\""
                   ]
@@ -113104,20 +114694,8 @@
                   "parameters": [
                     "",
                     "EnemyBomber",
-                    "832+(64*4)",
-                    "64*7",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyBomber",
-                    "832+(64*4)",
-                    "64*8",
+                    "832+(64*1)",
+                    "64*5",
                     "\"Units Layer\""
                   ]
                 },
@@ -113128,8 +114706,20 @@
                   "parameters": [
                     "",
                     "EnemyHealer",
-                    "832+(64*4)",
-                    "64*5",
+                    "832+(64*2)",
+                    "64*2",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyHealer",
+                    "832+(64*2)",
+                    "64*6",
                     "\"Units Layer\""
                   ]
                 },
@@ -113140,8 +114730,44 @@
                   "parameters": [
                     "",
                     "EnemyRanger",
-                    "832+(64*5)",
-                    "64*5",
+                    "832+(64*3)",
+                    "64*2",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger",
+                    "832+(64*3)",
+                    "64*6",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger2",
+                    "832+(64*4)",
+                    "64*2",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyRanger2",
+                    "832+(64*4)",
+                    "64*6",
                     "\"Units Layer\""
                   ]
                 },
@@ -113177,336 +114803,6 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "EnemyIndicator7",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator8",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "temp",
-                    "+",
-                    "1"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "Enemies",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarEmpty",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 16",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarFilled",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 16",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarEmpty",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 9",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarFilled",
-                        "Enemies.X() + 2",
-                        "Enemies.Y() - 9",
-                        "\"Resource Bar Layer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarEmpty",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "HealthBarFilled",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarEmpty",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "EnergyBarFilled",
-                        "Enemies"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "HealthBarEmpty"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "HealthBarFilled"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "EnergyBarEmpty"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "EnergyBarFilled"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Wave",
-                    "=",
-                    "8"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "temp",
-                    "=",
-                    "7"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "EnemiesLeft",
-                    "=",
-                    "9"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyMelee",
-                    "832+(64*2)",
-                    "64*1",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyMelee",
-                    "832+(64*1)",
-                    "64*3",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyMelee",
-                    "832+(64*1)",
-                    "64*4",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyHealer",
-                    "832+(64*2)",
-                    "64*3",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyRanger",
-                    "832+(64*4)",
-                    "64*1",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyRanger",
-                    "832+(64*3)",
-                    "64*3",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyRanger",
-                    "832+(64*4)",
-                    "64*6",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyRanger2",
-                    "832+(64*5)",
-                    "64*3",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "EnemyRanger2",
-                    "832+(64*5)",
-                    "64*6",
-                    "\"Units Layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator3",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyIndicator4",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
                     "EnemyIndicator6",
                     ""
                   ]
@@ -113663,7 +114959,7 @@
                   "parameters": [
                     "Wave",
                     "=",
-                    "9"
+                    "7"
                   ]
                 },
                 {
@@ -113673,7 +114969,7 @@
                   "parameters": [
                     "temp",
                     "=",
-                    "8"
+                    "6"
                   ]
                 }
               ],
@@ -114007,6 +115303,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -114016,7 +115313,7 @@
                   "parameters": [
                     "Wave",
                     "=",
-                    "10"
+                    "8"
                   ]
                 },
                 {
@@ -114026,7 +115323,267 @@
                   "parameters": [
                     "temp",
                     "=",
+                    "7"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EnemiesLeft",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyNecromancerBoss",
+                    "832+(64*7)",
+                    "64*5",
+                    "\"Units Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator4",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator6",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator7",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "EnemyIndicator8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "+",
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Enemies",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 16",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies.X() + 2",
+                        "Enemies.Y() - 9",
+                        "\"Resource Bar Layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "HealthBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarEmpty",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "EnergyBarFilled",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "HealthBarFilled"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarEmpty"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "EnergyBarFilled"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Wave",
+                    "=",
                     "9"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "temp",
+                    "=",
+                    "8"
                   ]
                 }
               ],
@@ -114129,7 +115686,7 @@
                   "parameters": [
                     "LevelsWon",
                     "=",
-                    "max(LevelsWon, 5)"
+                    "max(LevelsWon, 6)"
                   ]
                 }
               ]
@@ -114193,7 +115750,20 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -114436,6 +116006,18 @@
                     "\"Battlefield\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
+                    ""
+                  ]
                 }
               ]
             },
@@ -114582,6 +116164,18 @@
                   "parameters": [
                     "CameraButton",
                     "\"Shop\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
@@ -114744,6 +116338,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ally Buffs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -114941,6 +116536,18 @@
                   "parameters": [
                     "Button1",
                     "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\button_click.wav",
+                    "",
+                    "100 * (SFXVolume/100)",
                     ""
                   ]
                 }
