@@ -935,6 +935,102 @@
         "name": "assets\\Campaign Map Assets\\map_static.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_frame1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_frame1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_frame2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_frame2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_frame3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_frame3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_hovered_frame1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_hovered_frame1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_hovered_frame2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_hovered_frame2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_hovered_frame3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_hovered_frame3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_win_frame1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_win_frame1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_win_frame2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_win_frame2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_win_frame3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_win_frame3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_win_hovered_frame1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_win_hovered_frame1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_win_hovered_frame2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_win_hovered_frame2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/flag_win_hovered_frame3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\flag_win_hovered_frame3.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2405,7 +2501,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8141881203709996,
+        "zoomFactor": 0.5290357402156971,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2448,8 +2544,8 @@
           "name": "Level1",
           "persistentUuid": "d6733388-acd1-4c0d-9115-7c6cffd1e4a1",
           "width": 50,
-          "x": 268,
-          "y": 163,
+          "x": 292,
+          "y": 175,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -2461,29 +2557,12 @@
           "depth": 37.5,
           "height": 50,
           "keepRatio": true,
-          "layer": "Flags",
-          "name": "Level1Win",
-          "persistentUuid": "aa91ccc3-e9c5-4c39-be35-62ffe99bbd99",
-          "width": 50,
-          "x": 268,
-          "y": 163,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 37.5,
-          "height": 50,
-          "keepRatio": true,
-          "layer": "Flags",
+          "layer": "Flag Button",
           "name": "Level2",
           "persistentUuid": "14cc42c6-aad6-476d-b139-8028c9fd6afb",
           "width": 50,
-          "x": 327,
-          "y": 289,
+          "x": 342,
+          "y": 290,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -2498,8 +2577,8 @@
           "name": "Dot",
           "persistentUuid": "924b2f82-7b13-4c92-91f6-29c67fc8ace7",
           "width": 0,
-          "x": 311,
-          "y": 208,
+          "x": 319,
+          "y": 228,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -2520,8 +2599,8 @@
           "name": "Dot",
           "persistentUuid": "a3da507a-0ccd-43b5-9b37-5c8d5f53b997",
           "width": 0,
-          "x": 331,
-          "y": 239,
+          "x": 328,
+          "y": 242,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -2543,7 +2622,7 @@
           "persistentUuid": "dd2c558a-31cb-4ced-98f0-e74cc93df05f",
           "width": 0,
           "x": 330,
-          "y": 258,
+          "y": 262,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -2623,38 +2702,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "Dots",
-          "name": "Dot",
-          "persistentUuid": "e22a0d60-8172-45e6-b058-634e9630b8cd",
-          "width": 0,
-          "x": 324,
-          "y": 219,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Level",
-              "type": "number",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "depth": 37.5,
           "height": 50,
           "keepRatio": true,
-          "layer": "Flags",
+          "layer": "Flag Button",
           "name": "Level3",
           "persistentUuid": "e3c14c55-32ed-4295-a9e5-12170e93abb6",
           "width": 50,
-          "x": 442,
-          "y": 347,
+          "x": 445,
+          "y": 361,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -2669,8 +2726,8 @@
           "name": "Dot",
           "persistentUuid": "7b40741b-4900-4f4e-a9db-3fdf8329d062",
           "width": 0,
-          "x": 369,
-          "y": 339,
+          "x": 372,
+          "y": 345,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -2688,11 +2745,11 @@
           "depth": 37.5,
           "height": 50,
           "keepRatio": true,
-          "layer": "Flags",
+          "layer": "Flag Button",
           "name": "Level4",
           "persistentUuid": "7a7e1d85-b3f4-4656-ad50-084bbc85a74b",
           "width": 50,
-          "x": 568,
+          "x": 580,
           "y": 528,
           "zOrder": 14,
           "numberProperties": [],
@@ -2708,8 +2765,8 @@
           "name": "Dot",
           "persistentUuid": "27d3d05b-9992-4eb4-933e-a00c6deb272a",
           "width": 0,
-          "x": 559,
-          "y": 434,
+          "x": 562,
+          "y": 427,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -2730,8 +2787,8 @@
           "name": "Dot",
           "persistentUuid": "3222a209-fb79-4d0c-afe3-99993434f622",
           "width": 0,
-          "x": 568,
-          "y": 453,
+          "x": 587,
+          "y": 454,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -2752,7 +2809,7 @@
           "name": "Dot",
           "persistentUuid": "3cd584cd-c424-4b24-96ec-6f2ef3824e2d",
           "width": 0,
-          "x": 567,
+          "x": 580,
           "y": 473,
           "zOrder": 17,
           "numberProperties": [],
@@ -2774,8 +2831,8 @@
           "name": "Dot",
           "persistentUuid": "55acc477-2bc5-4aca-8416-143d286b2b47",
           "width": 0,
-          "x": 560,
-          "y": 491,
+          "x": 568,
+          "y": 490,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -2796,7 +2853,7 @@
           "name": "Dot",
           "persistentUuid": "581c2ceb-eaf6-42ff-bd34-9f760a521749",
           "width": 0,
-          "x": 554,
+          "x": 558,
           "y": 511,
           "zOrder": 19,
           "numberProperties": [],
@@ -2840,8 +2897,8 @@
           "name": "Dot",
           "persistentUuid": "11ef5a48-603e-4546-b238-747a9803136b",
           "width": 0,
-          "x": 564,
-          "y": 548,
+          "x": 567,
+          "y": 551,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -2884,8 +2941,8 @@
           "name": "Dot",
           "persistentUuid": "92889cc1-02a9-4c99-ba5b-836bb1cfc284",
           "width": 0,
-          "x": 643,
-          "y": 587,
+          "x": 644,
+          "y": 589,
           "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
@@ -2906,8 +2963,8 @@
           "name": "Dot",
           "persistentUuid": "92733cff-4d57-4256-b773-e2a5f15701cf",
           "width": 0,
-          "x": 667,
-          "y": 591,
+          "x": 669,
+          "y": 590,
           "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
@@ -2928,8 +2985,8 @@
           "name": "Dot",
           "persistentUuid": "07122c78-0f96-4c66-a928-ea5a0f2e118d",
           "width": 0,
-          "x": 697,
-          "y": 593,
+          "x": 693,
+          "y": 584,
           "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
@@ -2950,8 +3007,8 @@
           "name": "Dot",
           "persistentUuid": "1a2583de-341b-4f54-a2fb-e8427f6caff2",
           "width": 0,
-          "x": 726,
-          "y": 594,
+          "x": 716,
+          "y": 574,
           "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
@@ -2972,8 +3029,8 @@
           "name": "Dot",
           "persistentUuid": "e86f2734-079e-4b9d-a29d-4d7a3950759f",
           "width": 0,
-          "x": 757,
-          "y": 592,
+          "x": 734,
+          "y": 560,
           "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
@@ -2991,12 +3048,12 @@
           "depth": 37.5,
           "height": 50,
           "keepRatio": true,
-          "layer": "Flags",
+          "layer": "Flag Button",
           "name": "Level5",
           "persistentUuid": "2c5ba1ec-6dc6-4b95-8c6b-0cba1d948c7c",
           "width": 50,
-          "x": 922,
-          "y": 436,
+          "x": 906,
+          "y": 428,
           "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
@@ -3008,12 +3065,12 @@
           "depth": 37.5,
           "height": 50,
           "keepRatio": true,
-          "layer": "Flags",
+          "layer": "Flag Button",
           "name": "Level6",
           "persistentUuid": "4eb6afa1-19b6-4de2-9c41-26abda57572a",
           "width": 50,
-          "x": 1064,
-          "y": 418,
+          "x": 1015,
+          "y": 385,
           "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
@@ -3028,8 +3085,8 @@
           "name": "Dot",
           "persistentUuid": "cb27f0c5-c417-46f9-a97d-97709a4ecde1",
           "width": 0,
-          "x": 782,
-          "y": 587,
+          "x": 749,
+          "y": 544,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -3050,8 +3107,8 @@
           "name": "Dot",
           "persistentUuid": "d4e4acbf-0117-4e9d-b9f1-91eebf545606",
           "width": 0,
-          "x": 800,
-          "y": 577,
+          "x": 773,
+          "y": 532,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -3072,8 +3129,8 @@
           "name": "Dot",
           "persistentUuid": "1ff3c29e-1b00-4f91-b5f3-f636b96fc425",
           "width": 0,
-          "x": 817,
-          "y": 560,
+          "x": 798,
+          "y": 528,
           "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
@@ -3094,8 +3151,8 @@
           "name": "Dot",
           "persistentUuid": "27254699-7022-4ccf-b87f-13a2c1f84953",
           "width": 0,
-          "x": 832,
-          "y": 542,
+          "x": 823,
+          "y": 527,
           "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
@@ -3116,8 +3173,8 @@
           "name": "Dot",
           "persistentUuid": "253c01fd-592e-4287-8ff0-104238deb7a5",
           "width": 0,
-          "x": 847,
-          "y": 522,
+          "x": 850,
+          "y": 521,
           "zOrder": 34,
           "numberProperties": [],
           "stringProperties": [],
@@ -3138,8 +3195,8 @@
           "name": "Dot",
           "persistentUuid": "9a93efcc-dc54-4223-86f9-105f85e7970e",
           "width": 0,
-          "x": 863,
-          "y": 506,
+          "x": 874,
+          "y": 510,
           "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
@@ -3160,8 +3217,8 @@
           "name": "Dot",
           "persistentUuid": "78539b76-b332-429b-b77d-bc95efcea615",
           "width": 0,
-          "x": 882,
-          "y": 490,
+          "x": 890,
+          "y": 498,
           "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
@@ -3182,8 +3239,8 @@
           "name": "Dot",
           "persistentUuid": "d11bbaf3-5a4d-430a-9d62-0aac650ec378",
           "width": 0,
-          "x": 904,
-          "y": 482,
+          "x": 901,
+          "y": 485,
           "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
@@ -3204,16 +3261,21 @@
           "name": "Dot",
           "persistentUuid": "a9b03fed-5ff8-4f95-ba11-0c2a01219ed3",
           "width": 0,
-          "x": 972,
-          "y": 479,
+          "x": 937,
+          "y": 458,
           "zOrder": 38,
-          "numberProperties": [],
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
           "initialVariables": [
             {
               "name": "Level",
               "type": "number",
-              "value": 4
+              "value": 5
             }
           ]
         },
@@ -3226,16 +3288,21 @@
           "name": "Dot",
           "persistentUuid": "4ba88914-58f7-4fe7-9508-62e8773e1d7a",
           "width": 0,
-          "x": 991,
-          "y": 481,
+          "x": 958,
+          "y": 450,
           "zOrder": 39,
-          "numberProperties": [],
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
           "initialVariables": [
             {
               "name": "Level",
               "type": "number",
-              "value": 4
+              "value": 5
             }
           ]
         },
@@ -3248,16 +3315,21 @@
           "name": "Dot",
           "persistentUuid": "c6228b9f-dc26-48ae-a4a8-c661e699828e",
           "width": 0,
-          "x": 1011,
-          "y": 483,
+          "x": 980,
+          "y": 452,
           "zOrder": 40,
-          "numberProperties": [],
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
           "initialVariables": [
             {
               "name": "Level",
               "type": "number",
-              "value": 4
+              "value": 5
             }
           ]
         },
@@ -3270,16 +3342,21 @@
           "name": "Dot",
           "persistentUuid": "c9ac09b9-a38a-40f7-ada6-44e985acda12",
           "width": 0,
-          "x": 1031,
-          "y": 482,
+          "x": 1005,
+          "y": 451,
           "zOrder": 41,
-          "numberProperties": [],
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
           "initialVariables": [
             {
               "name": "Level",
               "type": "number",
-              "value": 4
+              "value": 5
             }
           ]
         },
@@ -3292,16 +3369,21 @@
           "name": "Dot",
           "persistentUuid": "d566fe38-5dc1-406c-933d-bd00976d8124",
           "width": 0,
-          "x": 1048,
-          "y": 477,
+          "x": 1018,
+          "y": 441,
           "zOrder": 42,
-          "numberProperties": [],
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
           "initialVariables": [
             {
               "name": "Level",
               "type": "number",
-              "value": 4
+              "value": 5
             }
           ]
         },
@@ -3326,91 +3408,6 @@
               "value": 4
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 37.5,
-          "height": 50,
-          "keepRatio": true,
-          "layer": "Flags",
-          "name": "Level2Win",
-          "persistentUuid": "ff9a6f41-41b9-49e0-aaf6-ea9e490c54c0",
-          "width": 50,
-          "x": 327,
-          "y": 289,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 37.5,
-          "height": 50,
-          "keepRatio": true,
-          "layer": "Flags",
-          "name": "Level3Win",
-          "persistentUuid": "74cdc384-b78e-47e9-b92c-a8bc382880ca",
-          "width": 50,
-          "x": 442,
-          "y": 347,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 37.5,
-          "height": 50,
-          "keepRatio": true,
-          "layer": "Flags",
-          "name": "Level4Win",
-          "persistentUuid": "4e45f337-b5e9-4d18-9978-a6d6b6ac867c",
-          "width": 50,
-          "x": 568,
-          "y": 528,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 37.5,
-          "height": 50,
-          "keepRatio": true,
-          "layer": "Flags",
-          "name": "Level5Win",
-          "persistentUuid": "31a73de8-43db-4606-85a1-b57febaef803",
-          "width": 50,
-          "x": 922,
-          "y": 436,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 37.5,
-          "height": 50,
-          "keepRatio": true,
-          "layer": "Flags",
-          "name": "Level6Win",
-          "persistentUuid": "dcd9032a-fb3c-41f3-b70f-eaf3c8a07d78",
-          "width": 50,
-          "x": 1064,
-          "y": 418,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -3637,6 +3634,152 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "keepRatio": true,
+          "layer": "Flags",
+          "name": "Flag1",
+          "persistentUuid": "b331f564-02e2-420f-a282-f4d924c8ef80",
+          "width": 50,
+          "x": 292,
+          "y": 174,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Dots",
+          "name": "Dot",
+          "persistentUuid": "b7029e4e-9193-4247-8e50-4674a4c37bfd",
+          "width": 0,
+          "x": 391,
+          "y": 355,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Level",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Dots",
+          "name": "Dot",
+          "persistentUuid": "2a371c31-448f-4f7e-88e2-009ca9541f7d",
+          "width": 0,
+          "x": 581,
+          "y": 436,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Level",
+              "type": "number",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "keepRatio": true,
+          "layer": "Flags",
+          "name": "Flag2",
+          "persistentUuid": "168f91f1-f2d5-4543-b33d-198799e1d708",
+          "width": 50,
+          "x": 342,
+          "y": 290,
+          "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "keepRatio": true,
+          "layer": "Flags",
+          "name": "Flag3",
+          "persistentUuid": "b7f345ac-e355-423a-8cca-03eb104f1cb3",
+          "width": 50,
+          "x": 445,
+          "y": 361,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "keepRatio": true,
+          "layer": "Flags",
+          "name": "Flag4",
+          "persistentUuid": "4f69076e-fba4-48ad-a446-f7a8f30fc6cf",
+          "width": 50,
+          "x": 580,
+          "y": 528,
+          "zOrder": 60,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "keepRatio": true,
+          "layer": "Flags",
+          "name": "Flag5",
+          "persistentUuid": "db070eab-9863-45e1-a0b7-013d13307d94",
+          "width": 50,
+          "x": 906,
+          "y": 428,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "keepRatio": true,
+          "layer": "Flags",
+          "name": "Flag6",
+          "persistentUuid": "942d0086-4e59-4b43-b586-4a0b68166837",
+          "width": 50,
+          "x": 1015,
+          "y": 385,
+          "zOrder": 62,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3722,7 +3865,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag_Hovered.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -3732,7 +3875,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -3778,92 +3921,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            }
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "Level1Win",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 0,
-            "RightPadding": 0,
-            "PressedLabelOffsetY": 0,
-            "BottomPadding": 0,
-            "TopPadding": 0,
-            "HoveredFadeOutDuration": 0.25
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win_Hovered.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Idle": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "",
-              "font": "mononoki-Regular.ttf",
-              "textAlignment": "center",
-              "characterSize": 0,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "",
-                "font": "mononoki-Regular.ttf",
-                "textAlignment": "center",
-                "verticalTextAlignment": "top",
-                "characterSize": 0,
-                "color": "255;255;255"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -3892,7 +3950,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag_Hovered.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -3902,7 +3960,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -3948,7 +4006,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -3965,7 +4023,7 @@
             {
               "name": "Level",
               "type": "number",
-              "value": 1
+              "value": 0
             }
           ],
           "effects": [],
@@ -4043,7 +4101,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag_Hovered.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -4053,7 +4111,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -4099,7 +4157,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -4128,7 +4186,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag_Hovered.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -4138,7 +4196,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -4184,7 +4242,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -4213,7 +4271,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag_Hovered.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -4223,7 +4281,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -4269,7 +4327,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -4298,7 +4356,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag_Hovered.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -4308,7 +4366,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -4354,432 +4412,7 @@
               "height": 64,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Flag.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            }
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "Level2Win",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 0,
-            "RightPadding": 0,
-            "PressedLabelOffsetY": 0,
-            "BottomPadding": 0,
-            "TopPadding": 0,
-            "HoveredFadeOutDuration": 0.25
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win_Hovered.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Idle": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "",
-              "font": "mononoki-Regular.ttf",
-              "textAlignment": "center",
-              "characterSize": 0,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "",
-                "font": "mononoki-Regular.ttf",
-                "textAlignment": "center",
-                "verticalTextAlignment": "top",
-                "characterSize": 0,
-                "color": "255;255;255"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            }
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "Level3Win",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 0,
-            "RightPadding": 0,
-            "PressedLabelOffsetY": 0,
-            "BottomPadding": 0,
-            "TopPadding": 0,
-            "HoveredFadeOutDuration": 0.25
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win_Hovered.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Idle": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "",
-              "font": "mononoki-Regular.ttf",
-              "textAlignment": "center",
-              "characterSize": 0,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "",
-                "font": "mononoki-Regular.ttf",
-                "textAlignment": "center",
-                "verticalTextAlignment": "top",
-                "characterSize": 0,
-                "color": "255;255;255"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            }
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "Level4Win",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 0,
-            "RightPadding": 0,
-            "PressedLabelOffsetY": 0,
-            "BottomPadding": 0,
-            "TopPadding": 0,
-            "HoveredFadeOutDuration": 0.25
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win_Hovered.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Idle": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "",
-              "font": "mononoki-Regular.ttf",
-              "textAlignment": "center",
-              "characterSize": 0,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "",
-                "font": "mononoki-Regular.ttf",
-                "textAlignment": "center",
-                "verticalTextAlignment": "top",
-                "characterSize": 0,
-                "color": "255;255;255"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            }
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "Level5Win",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 0,
-            "RightPadding": 0,
-            "PressedLabelOffsetY": 0,
-            "BottomPadding": 0,
-            "TopPadding": 0,
-            "HoveredFadeOutDuration": 0.25
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win_Hovered.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Idle": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "",
-              "font": "mononoki-Regular.ttf",
-              "textAlignment": "center",
-              "characterSize": 0,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "",
-                "font": "mononoki-Regular.ttf",
-                "textAlignment": "center",
-                "verticalTextAlignment": "top",
-                "characterSize": 0,
-                "color": "255;255;255"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            }
-          }
-        },
-        {
-          "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-          "name": "Level6Win",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 0,
-            "RightPadding": 0,
-            "PressedLabelOffsetY": 0,
-            "BottomPadding": 0,
-            "TopPadding": 0,
-            "HoveredFadeOutDuration": 0.25
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win_Hovered.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Idle": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
-              "tiled": false,
-              "topMargin": 0,
-              "width": 64
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "",
-              "font": "mononoki-Regular.ttf",
-              "textAlignment": "center",
-              "characterSize": 0,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "",
-                "font": "mononoki-Regular.ttf",
-                "textAlignment": "center",
-                "verticalTextAlignment": "top",
-                "characterSize": 0,
-                "color": "255;255;255"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 0,
-              "height": 64,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\Flag_Win.png",
+              "texture": "assets\\range.png",
               "tiled": false,
               "topMargin": 0,
               "width": 64
@@ -5709,6 +5342,2958 @@
             "characterSize": 25,
             "color": "0;0;0"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Flag1",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Flag_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Flag2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Flag_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Flag3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Flag_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Flag4",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Flag_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Flag5",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Flag_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Flag6",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Flag_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Flag_win_hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Campaign Map Assets\\flag_win_hovered_frame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 5
+                          },
+                          {
+                            "x": 59,
+                            "y": 62
+                          },
+                          {
+                            "x": 7,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -5765,22 +8350,22 @@
                 "objectName": "Level6"
               },
               {
-                "objectName": "Level1Win"
+                "objectName": "Flag1"
               },
               {
-                "objectName": "Level2Win"
+                "objectName": "Flag2"
               },
               {
-                "objectName": "Level3Win"
+                "objectName": "Flag3"
               },
               {
-                "objectName": "Level4Win"
+                "objectName": "Flag4"
               },
               {
-                "objectName": "Level5Win"
+                "objectName": "Flag5"
               },
               {
-                "objectName": "Level6Win"
+                "objectName": "Flag6"
               },
               {
                 "objectName": "Dot"
@@ -5829,7 +8414,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "Level1Win"
+                "Flag2"
               ]
             },
             {
@@ -5837,7 +8422,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "Level2Win"
+                "Flag3"
               ]
             },
             {
@@ -5845,7 +8430,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "Level3Win"
+                "Flag4"
               ]
             },
             {
@@ -5853,7 +8438,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "Level4Win"
+                "Flag5"
               ]
             },
             {
@@ -5861,7 +8446,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "Level5Win"
+                "Flag6"
               ]
             },
             {
@@ -5869,7 +8454,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "Level6Win"
+                "Level1"
               ]
             },
             {
@@ -5945,6 +8530,16 @@
                 "yes",
                 "50 * (MusicVolume/100)",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "LevelsWon",
+                "=",
+                "4"
               ]
             }
           ],
@@ -6265,27 +8860,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "Level1"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
-                    "Level1Win",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "Level2",
+                    "Flag2",
                     ""
                   ]
                 }
@@ -6314,27 +8892,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "Level2"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
-                    "Level2Win",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "Level3",
+                    "Flag3",
                     ""
                   ]
                 }
@@ -6363,27 +8924,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "Level3"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
-                    "Level3Win",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "Level4",
+                    "Flag4",
                     ""
                   ]
                 }
@@ -6412,27 +8956,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "Level4"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
-                    "Level4Win",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "Level5",
+                    "Flag5",
                     ""
                   ]
                 }
@@ -6461,27 +8988,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "Level5"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
-                    "Level5Win",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "Level6",
+                    "Flag6",
                     ""
                   ]
                 }
@@ -6507,22 +9017,922 @@
                   "parameters": []
                 }
               ],
-              "actions": [
+              "actions": []
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
-                    "value": "Cache"
+                    "inverted": true,
+                    "value": "SourisSurObjet"
                   },
                   "parameters": [
-                    "Level6"
+                    "Flag1",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag1",
+                        "Animation",
+                        "=",
+                        "\"Flag_idle\""
+                      ]
+                    }
                   ]
                 },
                 {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag1",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_idle\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
                   "type": {
-                    "value": "Montre"
+                    "value": "SourisSurObjet"
                   },
                   "parameters": [
-                    "Level6Win",
+                    "Flag1",
+                    "",
+                    "",
                     ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag1",
+                        "Animation",
+                        "=",
+                        "\"Flag_hovered\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag1",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_hovered\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Flag2",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag2",
+                        "Animation",
+                        "=",
+                        "\"Flag_idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag2",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_idle\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Flag2",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag2",
+                        "Animation",
+                        "=",
+                        "\"Flag_hovered\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag2",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_hovered\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Flag3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag3",
+                        "Animation",
+                        "=",
+                        "\"Flag_idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag3",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_idle\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Flag3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag3",
+                        "Animation",
+                        "=",
+                        "\"Flag_hovered\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag3",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_hovered\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Flag4",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "4"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag4",
+                        "Animation",
+                        "=",
+                        "\"Flag_idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "4"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag4",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_idle\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Flag4",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "4"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag4",
+                        "Animation",
+                        "=",
+                        "\"Flag_hovered\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "4"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag4",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_hovered\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Flag5",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag5",
+                        "Animation",
+                        "=",
+                        "\"Flag_idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag5",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_idle\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Flag5",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag5",
+                        "Animation",
+                        "=",
+                        "\"Flag_hovered\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag5",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_hovered\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Flag6",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "6"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag6",
+                        "Animation",
+                        "=",
+                        "\"Flag_idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "6"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag6",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_idle\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Flag6",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        "<",
+                        "6"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag6",
+                        "Animation",
+                        "=",
+                        "\"Flag_hovered\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "LevelsWon",
+                        ">=",
+                        "6"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Flag6",
+                        "Animation",
+                        "=",
+                        "\"Flag_win_hovered\""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -6620,6 +10030,16 @@
                     "Level2",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "LevelsWon",
+                    ">=",
+                    "1"
+                  ]
                 }
               ],
               "actions": [
@@ -6689,6 +10109,16 @@
                   "parameters": [
                     "Level3",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "LevelsWon",
+                    ">=",
+                    "2"
                   ]
                 }
               ],
@@ -6760,6 +10190,16 @@
                     "Level4",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "LevelsWon",
+                    ">=",
+                    "3"
+                  ]
                 }
               ],
               "actions": [
@@ -6830,6 +10270,16 @@
                     "Level5",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "LevelsWon",
+                    ">=",
+                    "4"
+                  ]
                 }
               ],
               "actions": [
@@ -6899,6 +10349,16 @@
                   "parameters": [
                     "Level6",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "LevelsWon",
+                    ">=",
+                    "5"
                   ]
                 }
               ],
@@ -7066,66 +10526,6 @@
                 },
                 {
                   "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level1Win",
-                    "yes",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level2Win",
-                    "yes",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level3Win",
-                    "yes",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level4Win",
-                    "yes",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level5Win",
-                    "yes",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level6Win",
-                    "yes",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Cache"
                   },
                   "parameters": [
@@ -7276,66 +10676,6 @@
                   },
                   "parameters": [
                     "Level6",
-                    "no",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level1Win",
-                    "no",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level2Win",
-                    "no",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level3Win",
-                    "no",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level4Win",
-                    "no",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level5Win",
-                    "no",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "Level6Win",
                     "no",
                     ""
                   ]
@@ -7640,7 +10980,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
+          "isLocked": true,
           "name": "",
           "renderingType": "",
           "visibility": true,
@@ -7686,6 +11026,39 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "Dots",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Flag Button",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
@@ -7825,7 +11198,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6040838749989103,
+        "zoomFactor": 0.4789341884535431,
         "windowMask": false
       },
       "objectsGroups": [
@@ -9871,9 +13244,9 @@
           "layer": "UI Layer",
           "name": "Tip7Text",
           "persistentUuid": "e46755d2-0730-4dbc-a6b6-cd6938c49997",
-          "width": 327,
-          "x": 501,
-          "y": 79,
+          "width": 292,
+          "x": 530,
+          "y": 103,
           "zOrder": 79,
           "numberProperties": [],
           "stringProperties": [],
@@ -24274,7 +27647,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6897782140104759,
+        "zoomFactor": 0.4481978045410527,
         "windowMask": false
       },
       "objectsGroups": [
@@ -39495,7 +42868,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.667277399833024,
+        "zoomFactor": 0.511778403521038,
         "windowMask": false
       },
       "objectsGroups": [
@@ -95721,7 +99094,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4950840073749135,
+        "zoomFactor": 0.4789341884535485,
         "windowMask": false
       },
       "objectsGroups": [
