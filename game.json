@@ -1031,6 +1031,14 @@
         "name": "assets\\Campaign Map Assets\\flag_win_hovered_frame3.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Ally Units/80K Final - Arcanist - Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally Units\\80K Final - Arcanist - Idle.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2501,7 +2509,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5290357402156971,
+        "zoomFactor": 1.0615714305220243,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -89248,7 +89256,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Arcanist.png",
+                      "image": "assets\\Ally Units\\80K Final - Arcanist - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -89264,20 +89272,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 2
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 61,
+                            "y": 2
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 61,
+                            "y": 62
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 3,
+                            "y": 62
                           }
                         ]
                       ]
@@ -89308,7 +89316,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Arcanist.png",
+                      "image": "assets\\Ally Units\\80K Final - Arcanist - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -89324,20 +89332,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 2
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 61,
+                            "y": 2
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 61,
+                            "y": 62
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 3,
+                            "y": 62
                           }
                         ]
                       ]
@@ -109334,7 +109342,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Arcanist.png",
+                      "image": "assets\\Ally Units\\80K Final - Arcanist - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -109350,20 +109358,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 2
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 61,
+                            "y": 2
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 61,
+                            "y": 62
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 3,
+                            "y": 62
                           }
                         ]
                       ]
@@ -109394,7 +109402,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Arcanist.png",
+                      "image": "assets\\Ally Units\\80K Final - Arcanist - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -109410,20 +109418,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 2
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 61,
+                            "y": 2
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 61,
+                            "y": 62
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 3,
+                            "y": 62
                           }
                         ]
                       ]
