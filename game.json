@@ -927,6 +927,14 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Campaign Map Assets/map_static.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Campaign Map Assets\\map_static.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2397,7 +2405,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.44819780454104013,
+        "zoomFactor": 0.8141881203709996,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3652,7 +3660,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Temp_Map.png",
+                      "image": "assets\\Campaign Map Assets\\map_static.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
