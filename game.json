@@ -1362,7 +1362,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Campaign Against the Dead",
+          "string": "Alliance of Kingdoms",
           "font": "",
           "textAlignment": "center",
           "characterSize": 50,
@@ -1385,7 +1385,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Campaign Against the Dead",
+            "text": "Alliance of Kingdoms",
             "font": "",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
@@ -2525,7 +2525,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.0615714305220243,
+        "zoomFactor": 0.8141881203710122,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -13443,12 +13443,12 @@
             {
               "name": "Health",
               "type": "number",
-              "value": 10
+              "value": 11
             },
             {
               "name": "MaxHealth",
               "type": "number",
-              "value": 10
+              "value": 11
             },
             {
               "name": "Energy",
@@ -60460,7 +60460,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.44819780454105607,
+        "zoomFactor": 0.4789341884535466,
         "windowMask": false
       },
       "objectsGroups": [
@@ -99118,7 +99118,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4789341884535485,
+        "zoomFactor": 0.6672773998330307,
         "windowMask": false
       },
       "objectsGroups": [
