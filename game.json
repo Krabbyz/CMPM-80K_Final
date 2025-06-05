@@ -1047,6 +1047,14 @@
         "name": "assets\\Ally Units\\80K Final - Merchant - Idle.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Ally Units/80K Final - Tinkerer - Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally Units\\80K Final - Tinkerer - Idle.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -52147,7 +52155,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Tinkerer.png",
+                      "image": "assets\\Ally Units\\80K Final - Tinkerer - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -52163,20 +52171,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 5,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 63,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 63,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 5,
+                            "y": 63
                           }
                         ]
                       ]
@@ -52207,7 +52215,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Tinkerer.png",
+                      "image": "assets\\Ally Units\\80K Final - Tinkerer - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -52223,20 +52231,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 5,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 63,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 63,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 5,
+                            "y": 63
                           }
                         ]
                       ]
@@ -69463,7 +69471,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Tinkerer.png",
+                      "image": "assets\\Ally Units\\80K Final - Tinkerer - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -69479,20 +69487,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 5,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 63,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 63,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 5,
+                            "y": 63
                           }
                         ]
                       ]
@@ -69523,7 +69531,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Tinkerer.png",
+                      "image": "assets\\Ally Units\\80K Final - Tinkerer - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -69539,20 +69547,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 5,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 63,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 63,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 5,
+                            "y": 63
                           }
                         ]
                       ]
@@ -88205,7 +88213,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Tinkerer.png",
+                      "image": "assets\\Ally Units\\80K Final - Tinkerer - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -88221,20 +88229,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 5,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 63,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 63,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 5,
+                            "y": 63
                           }
                         ]
                       ]
@@ -88265,7 +88273,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Tinkerer.png",
+                      "image": "assets\\Ally Units\\80K Final - Tinkerer - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -88281,20 +88289,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 5,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 63,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 63,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 5,
+                            "y": 63
                           }
                         ]
                       ]
@@ -108261,7 +108269,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Tinkerer.png",
+                      "image": "assets\\Ally Units\\80K Final - Tinkerer - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -108277,20 +108285,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 5,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 63,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 63,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 5,
+                            "y": 63
                           }
                         ]
                       ]
@@ -108321,7 +108329,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Tinkerer.png",
+                      "image": "assets\\Ally Units\\80K Final - Tinkerer - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -108337,20 +108345,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 5,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 63,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 63,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 5,
+                            "y": 63
                           }
                         ]
                       ]
