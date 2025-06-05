@@ -7817,7 +7817,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6244537826600216,
+        "zoomFactor": 0.6040838749989103,
         "windowMask": false
       },
       "objectsGroups": [
@@ -8504,7 +8504,7 @@
           "name": "WallHPText",
           "persistentUuid": "d996fc0c-bb6c-4d21-9878-df5617f64cf9",
           "width": 0,
-          "x": 64,
+          "x": 90,
           "y": 17,
           "zOrder": 18,
           "numberProperties": [],
@@ -8602,7 +8602,7 @@
           "name": "GoldText",
           "persistentUuid": "ccfbebaa-f465-4ec8-93b1-0178c90a7e9a",
           "width": 0,
-          "x": 178,
+          "x": 165,
           "y": 17,
           "zOrder": 30,
           "numberProperties": [],
@@ -8618,8 +8618,8 @@
           "name": "WaveText",
           "persistentUuid": "ffb9be04-3586-42ac-acf6-ca34fd26e3db",
           "width": 0,
-          "x": 1096,
-          "y": 21,
+          "x": 1050,
+          "y": 17,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -9988,6 +9988,38 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 45,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "013887b8-5e96-49ef-a6f1-f73d7b4e3e71",
+          "width": 157,
+          "x": 82,
+          "y": 7,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 45,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "63818df7-8b03-4acc-8188-405534394db2",
+          "width": 144,
+          "x": 1044,
+          "y": 7,
+          "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -10662,7 +10694,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Health: 0",
+          "string": "🛡️ 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -10685,7 +10717,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Health: 0",
+            "text": "🛡️ 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -11580,7 +11612,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Gold: 0",
+          "string": "🪙 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -11603,7 +11635,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Gold: 0",
+            "text": "🪙 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -11622,7 +11654,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Wave: 0/?",
+          "string": "⚔️ Wave: 0/?",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -11645,7 +11677,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Wave: 0/?",
+            "text": "⚔️ Wave: 0/?",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -17322,6 +17354,22 @@
             "characterSize": 20,
             "color": "0;0;0"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "ui_box",
+          "rightMargin": 0,
+          "texture": "assets\\Paper3.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -17554,6 +17602,9 @@
           },
           {
             "objectName": "WaveText"
+          },
+          {
+            "objectName": "ui_box"
           }
         ]
       },
@@ -20543,7 +20594,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Wall Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -20756,7 +20806,7 @@
                     "WallHPText",
                     "Text",
                     "=",
-                    "\"Health: \" + ToString(Wall.Variable(Health))"
+                    "\"🛡️ \" + ToString(Wall.Variable(Health))"
                   ]
                 }
               ]
@@ -21015,6 +21065,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -21024,7 +21103,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Shop",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21544,7 +21622,7 @@
                     "GoldText",
                     "Text",
                     "=",
-                    "\"Gold: \" + Gold"
+                    "\"🪙 \" + Gold"
                   ]
                 }
               ]
@@ -21557,7 +21635,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21574,7 +21651,7 @@
                     "WaveText",
                     "Text",
                     "=",
-                    "\"Wave: \" + Wave + \"/4\""
+                    "\"⚔️ Wave: \" + Wave + \"/4\""
                   ]
                 }
               ],
@@ -24189,7 +24266,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.40575189059439704,
+        "zoomFactor": 0.6897782140104759,
         "windowMask": false
       },
       "objectsGroups": [
@@ -24876,7 +24953,7 @@
           "name": "WallHPText",
           "persistentUuid": "d996fc0c-bb6c-4d21-9878-df5617f64cf9",
           "width": 0,
-          "x": 64,
+          "x": 90,
           "y": 17,
           "zOrder": 18,
           "numberProperties": [],
@@ -24974,7 +25051,7 @@
           "name": "GoldText",
           "persistentUuid": "ccfbebaa-f465-4ec8-93b1-0178c90a7e9a",
           "width": 0,
-          "x": 178,
+          "x": 165,
           "y": 17,
           "zOrder": 30,
           "numberProperties": [],
@@ -24990,8 +25067,8 @@
           "name": "WaveText",
           "persistentUuid": "ffb9be04-3586-42ac-acf6-ca34fd26e3db",
           "width": 0,
-          "x": 1096,
-          "y": 21,
+          "x": 1050,
+          "y": 17,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -26100,6 +26177,40 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 45,
+          "keepRatio": true,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "91621ef4-fd65-489d-af54-4bebe4342a1b",
+          "width": 157,
+          "x": 82,
+          "y": 7,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 45,
+          "keepRatio": true,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "6c792ba8-e1c3-430e-9e51-75a9b869e6c4",
+          "width": 144,
+          "x": 1044,
+          "y": 7,
+          "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -26784,7 +26895,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Health: 0",
+          "string": "🛡️ 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -26807,7 +26918,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Health: 0",
+            "text": "🛡️ 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -27717,7 +27828,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Gold: 0",
+          "string": "🪙 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -27740,7 +27851,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Gold: 0",
+            "text": "🪙 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -27759,7 +27870,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Wave: 0/?",
+          "string": "⚔️ Wave: 0/?",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -27782,7 +27893,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Wave: 0/?",
+            "text": "⚔️ Wave: 0/?",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -32589,6 +32700,22 @@
               "width": 192
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "ui_box",
+          "rightMargin": 0,
+          "texture": "assets\\Paper3.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -32768,6 +32895,9 @@
           },
           {
             "objectName": "Button1"
+          },
+          {
+            "objectName": "ui_box"
           }
         ]
       },
@@ -33078,7 +33208,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Settings",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -34253,6 +34382,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -35669,7 +35799,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Wall Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -35882,7 +36011,7 @@
                     "WallHPText",
                     "Text",
                     "=",
-                    "\"Health: \" + ToString(Wall.Variable(Health))"
+                    "\"🛡️ \" + ToString(Wall.Variable(Health))"
                   ]
                 }
               ]
@@ -36141,6 +36270,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -36150,7 +36308,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Shop",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -36651,7 +36808,7 @@
                     "GoldText",
                     "Text",
                     "=",
-                    "\"Gold: \" + Gold"
+                    "\"🪙 \" + Gold"
                   ]
                 }
               ]
@@ -36710,7 +36867,7 @@
                     "WaveText",
                     "Text",
                     "=",
-                    "\"Wave: \" + Wave + \"/6\""
+                    "\"⚔️ Wave: \" + Wave + \"/6\""
                   ]
                 }
               ],
@@ -39330,7 +39487,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.39251611754883786,
+        "zoomFactor": 0.667277399833024,
         "windowMask": false
       },
       "objectsGroups": [
@@ -40045,7 +40202,7 @@
           "name": "WallHPText",
           "persistentUuid": "d996fc0c-bb6c-4d21-9878-df5617f64cf9",
           "width": 0,
-          "x": 64,
+          "x": 90,
           "y": 17,
           "zOrder": 18,
           "numberProperties": [],
@@ -40143,7 +40300,7 @@
           "name": "GoldText",
           "persistentUuid": "ccfbebaa-f465-4ec8-93b1-0178c90a7e9a",
           "width": 0,
-          "x": 178,
+          "x": 165,
           "y": 17,
           "zOrder": 30,
           "numberProperties": [],
@@ -40159,8 +40316,8 @@
           "name": "WaveText",
           "persistentUuid": "ffb9be04-3586-42ac-acf6-ca34fd26e3db",
           "width": 0,
-          "x": 1096,
-          "y": 21,
+          "x": 1050,
+          "y": 17,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -41351,6 +41508,39 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 45,
+          "keepRatio": true,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "e18dc940-4594-4b54-ba4d-64b1c8624d92",
+          "width": 157,
+          "x": 82,
+          "y": 7,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 45,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "27be28fe-1744-42e7-8355-9c064e709634",
+          "width": 144,
+          "x": 1044,
+          "y": 7,
+          "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -42035,7 +42225,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Health: 0",
+          "string": "🛡️ 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -42058,7 +42248,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Health: 0",
+            "text": "🛡️ 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -42968,7 +43158,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Gold: 0",
+          "string": "🪙 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -42991,7 +43181,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Gold: 0",
+            "text": "🪙 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -43010,7 +43200,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Wave: 0/?",
+          "string": "⚔️ Wave: 0/?",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -43033,7 +43223,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Wave: 0/?",
+            "text": "⚔️ Wave: 0/?",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -48927,6 +49117,22 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "ui_box",
+          "rightMargin": 0,
+          "texture": "assets\\Paper3.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -49118,6 +49324,9 @@
           },
           {
             "objectName": "WallHPText"
+          },
+          {
+            "objectName": "ui_box"
           },
           {
             "objectName": "GoldText"
@@ -50620,6 +50829,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -52535,7 +52745,7 @@
                     "WallHPText",
                     "Text",
                     "=",
-                    "\"Health: \" + ToString(Wall.Variable(Health))"
+                    "\"🛡️ \" + ToString(Wall.Variable(Health))"
                   ]
                 }
               ]
@@ -52791,6 +53001,35 @@
                     "",
                     "\"Level Select\"",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "=",
+                    "0"
                   ]
                 }
               ]
@@ -53725,7 +53964,7 @@
                     "GoldText",
                     "Text",
                     "=",
-                    "\"Gold: \" + Gold"
+                    "\"🪙 \" + Gold"
                   ]
                 }
               ]
@@ -53784,7 +54023,7 @@
                     "WaveText",
                     "Text",
                     "=",
-                    "\"Wave: \" + Wave + \"/7\""
+                    "\"⚔️ Wave: \" + Wave + \"/7\""
                   ]
                 }
               ],
@@ -55613,6 +55852,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "TESTING/DEBUG",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -57547,7 +57787,7 @@
           "name": "WallHPText",
           "persistentUuid": "d996fc0c-bb6c-4d21-9878-df5617f64cf9",
           "width": 0,
-          "x": 64,
+          "x": 90,
           "y": 17,
           "zOrder": 18,
           "numberProperties": [],
@@ -57645,7 +57885,7 @@
           "name": "GoldText",
           "persistentUuid": "ccfbebaa-f465-4ec8-93b1-0178c90a7e9a",
           "width": 0,
-          "x": 178,
+          "x": 165,
           "y": 17,
           "zOrder": 30,
           "numberProperties": [],
@@ -57661,8 +57901,8 @@
           "name": "WaveText",
           "persistentUuid": "ffb9be04-3586-42ac-acf6-ca34fd26e3db",
           "width": 0,
-          "x": 1096,
-          "y": 21,
+          "x": 1050,
+          "y": 17,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -58885,6 +59125,38 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 45,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "0a729164-0861-49b9-badb-c46c11222653",
+          "width": 157,
+          "x": 82,
+          "y": 7,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 45,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "af563c83-a138-49c0-9ff7-2c17ab81159d",
+          "width": 144,
+          "x": 1044,
+          "y": 7,
+          "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -59569,7 +59841,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Health: 0",
+          "string": "🛡️ 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -59592,7 +59864,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Health: 0",
+            "text": "🛡️ 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -60502,7 +60774,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Gold: 0",
+          "string": "🪙 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -60525,7 +60797,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Gold: 0",
+            "text": "🪙 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -60544,7 +60816,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Wave: 0/?",
+          "string": "⚔️ Wave: 0/?",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -60567,7 +60839,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Wave: 0/?",
+            "text": "⚔️ Wave: 0/?",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -66559,6 +66831,22 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "ui_box",
+          "rightMargin": 0,
+          "texture": "assets\\Paper3.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -66768,6 +67056,9 @@
           },
           {
             "objectName": "WaveText"
+          },
+          {
+            "objectName": "ui_box"
           },
           {
             "objectName": "NewSprite2"
@@ -68274,6 +68565,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -70242,7 +70534,7 @@
                     "WallHPText",
                     "Text",
                     "=",
-                    "\"Health: \" + ToString(Wall.Variable(Health))"
+                    "\"🛡️ \" + ToString(Wall.Variable(Health))"
                   ]
                 }
               ]
@@ -70501,6 +70793,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -70510,7 +70831,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Shop",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -71562,7 +71882,7 @@
                     "GoldText",
                     "Text",
                     "=",
-                    "\"Gold: \" + Gold"
+                    "\"🪙 \" + Gold"
                   ]
                 }
               ]
@@ -71604,7 +71924,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -71621,7 +71940,7 @@
                     "WaveText",
                     "Text",
                     "=",
-                    "\"Wave: \" + Wave + \"/9\""
+                    "\"⚔️ Wave: \" + Wave + \"/9\""
                   ]
                 }
               ],
@@ -76184,7 +76503,7 @@
           "name": "WallHPText",
           "persistentUuid": "d996fc0c-bb6c-4d21-9878-df5617f64cf9",
           "width": 0,
-          "x": 64,
+          "x": 90,
           "y": 17,
           "zOrder": 18,
           "numberProperties": [],
@@ -76282,7 +76601,7 @@
           "name": "GoldText",
           "persistentUuid": "ccfbebaa-f465-4ec8-93b1-0178c90a7e9a",
           "width": 0,
-          "x": 178,
+          "x": 165,
           "y": 17,
           "zOrder": 30,
           "numberProperties": [],
@@ -76298,8 +76617,8 @@
           "name": "WaveText",
           "persistentUuid": "ffb9be04-3586-42ac-acf6-ca34fd26e3db",
           "width": 0,
-          "x": 1096,
-          "y": 21,
+          "x": 1050,
+          "y": 17,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -77538,6 +77857,38 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 45,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "b24c963a-3883-4638-8aeb-94f14710e8d1",
+          "width": 157,
+          "x": 82,
+          "y": 7,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 45,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "f1378e12-4da7-47c6-b6ad-9e09cc7bbca1",
+          "width": 144,
+          "x": 1044,
+          "y": 7,
+          "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -78227,7 +78578,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Health: 0",
+          "string": "🛡️ 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -78250,7 +78601,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Health: 0",
+            "text": "🛡️ 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -79165,7 +79516,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Gold: 0",
+          "string": "🪙 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -79188,7 +79539,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Gold: 0",
+            "text": "🪙 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -79207,7 +79558,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Wave: 0/?",
+          "string": "⚔️ Wave: 0/?",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -79230,7 +79581,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Wave: 0/?",
+            "text": "⚔️ Wave: 0/?",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -85760,6 +86111,22 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "ui_box",
+          "rightMargin": 0,
+          "texture": "assets\\Paper3.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -85997,6 +86364,9 @@
           },
           {
             "objectName": "WaveText"
+          },
+          {
+            "objectName": "ui_box"
           },
           {
             "objectName": "NewSprite2"
@@ -87539,6 +87909,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ticks / Combat",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -89938,7 +90309,7 @@
                     "WallHPText",
                     "Text",
                     "=",
-                    "\"Health: \" + ToString(Wall.Variable(Health))"
+                    "\"🛡️ \" + ToString(Wall.Variable(Health))"
                   ]
                 }
               ]
@@ -90197,6 +90568,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -90206,7 +90606,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Shop",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -91489,7 +91888,7 @@
                     "GoldText",
                     "Text",
                     "=",
-                    "\"Gold: \" + Gold"
+                    "\"🪙 \" + Gold"
                   ]
                 }
               ]
@@ -91531,7 +91930,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -91548,7 +91946,7 @@
                     "WaveText",
                     "Text",
                     "=",
-                    "\"Wave: \" + Wave + \"/9\""
+                    "\"⚔️ Wave: \" + Wave + \"/9\""
                   ]
                 }
               ],
@@ -95315,7 +95713,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.37971210019481216,
+        "zoomFactor": 0.4950840073749135,
         "windowMask": false
       },
       "objectsGroups": [
@@ -96060,7 +96458,7 @@
           "name": "WallHPText",
           "persistentUuid": "d996fc0c-bb6c-4d21-9878-df5617f64cf9",
           "width": 0,
-          "x": 64,
+          "x": 90,
           "y": 17,
           "zOrder": 18,
           "numberProperties": [],
@@ -96158,7 +96556,7 @@
           "name": "GoldText",
           "persistentUuid": "ccfbebaa-f465-4ec8-93b1-0178c90a7e9a",
           "width": 0,
-          "x": 178,
+          "x": 165,
           "y": 17,
           "zOrder": 30,
           "numberProperties": [],
@@ -96174,8 +96572,8 @@
           "name": "WaveText",
           "persistentUuid": "ffb9be04-3586-42ac-acf6-ca34fd26e3db",
           "width": 0,
-          "x": 1096,
-          "y": 21,
+          "x": 1050,
+          "y": 17,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -97495,6 +97893,38 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 45,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "3a838275-f610-4763-87ab-93db833c4f9e",
+          "width": 157,
+          "x": 82,
+          "y": 7,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 45,
+          "layer": "UI Layer Dont Move",
+          "name": "ui_box",
+          "persistentUuid": "e4c3c45e-117c-4743-9a71-99e98af0ddda",
+          "width": 144,
+          "x": 1044,
+          "y": 7,
+          "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -98194,7 +98624,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Health: 0",
+          "string": "🛡️ 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -98217,7 +98647,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Health: 0",
+            "text": "🛡️ 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -99142,7 +99572,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Gold: 0",
+          "string": "🪙 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -99165,7 +99595,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Gold: 0",
+            "text": "🪙 0",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -99184,7 +99614,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Wave: 0/?",
+          "string": "⚔️ Wave: 0/?",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -99207,7 +99637,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Wave: 0/?",
+            "text": "⚔️ Wave: 0/?",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -106256,6 +106686,22 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "ui_box",
+          "rightMargin": 0,
+          "texture": "assets\\Paper3.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -106508,6 +106954,9 @@
           },
           {
             "objectName": "WaveText"
+          },
+          {
+            "objectName": "ui_box"
           },
           {
             "objectName": "NewSprite2"
@@ -108065,6 +108514,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Ticks / Combat",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -111434,7 +111884,7 @@
                     "WallHPText",
                     "Text",
                     "=",
-                    "\"Health: \" + ToString(Wall.Variable(Health))"
+                    "\"🛡️ \" + ToString(Wall.Variable(Health))"
                   ]
                 }
               ]
@@ -111690,6 +112140,35 @@
                     "",
                     "\"Level Select\"",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Wall",
+                    "Health",
+                    "=",
+                    "0"
                   ]
                 }
               ]
@@ -113257,7 +113736,7 @@
                     "GoldText",
                     "Text",
                     "=",
-                    "\"Gold: \" + Gold"
+                    "\"🪙 \" + Gold"
                   ]
                 }
               ]
@@ -113299,7 +113778,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -113316,7 +113794,7 @@
                     "WaveText",
                     "Text",
                     "=",
-                    "\"Wave: \" + Wave + \"/8\""
+                    "\"⚔️ Wave: \" + Wave + \"/8\""
                   ]
                 }
               ],
@@ -116697,7 +117175,7 @@
           "isLocked": false,
           "name": "UI Layer",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
