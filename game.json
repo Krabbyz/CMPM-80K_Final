@@ -1055,6 +1055,36 @@
         "name": "assets\\Ally Units\\80K Final - Tinkerer - Idle.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/tinkerer_sound.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\tinkerer_sound.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/coin_sound.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\coin_sound.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/laser.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\laser.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1182,8 +1212,8 @@
           "name": "CreditsText",
           "persistentUuid": "5b4285b2-a87b-4cb6-8928-5808cc3a5e96",
           "width": 0,
-          "x": -867,
-          "y": 162,
+          "x": -833,
+          "y": 125,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -1634,10 +1664,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\nAaron Tan\n\nAll sound effects are from \nFreesound.org and are licensed \nunder CC0.",
+          "string": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\n\n-- Music/SFX --\nAaron Tan\n\nAll sound effects are from \nFreesound.org and are licensed \nunder CC0.",
           "font": "",
           "textAlignment": "center",
-          "characterSize": 32,
+          "characterSize": 27,
           "color": {
             "b": 0,
             "g": 0,
@@ -1657,11 +1687,11 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\nAaron Tan\n\nAll sound effects are from \nFreesound.org and are licensed \nunder CC0.",
+            "text": "-- Art & Game Direction --\nCharles Haiwen\n\n-- Programming --\nAustin Nguyen\n\n-- Music/SFX --\nAaron Tan\n\nAll sound effects are from \nFreesound.org and are licensed \nunder CC0.",
             "font": "",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
-            "characterSize": 32,
+            "characterSize": 27,
             "color": "0;0;0"
           }
         },
@@ -54234,7 +54264,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ticks",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -54819,7 +54848,7 @@
                                     "value": "NumberObjectVariable"
                                   },
                                   "parameters": [
-                                    "Allies",
+                                    "Enemies",
                                     "AttackNoise",
                                     "=",
                                     "0"
@@ -54849,7 +54878,7 @@
                                     "value": "NumberObjectVariable"
                                   },
                                   "parameters": [
-                                    "Allies",
+                                    "Enemies",
                                     "AttackNoise",
                                     "=",
                                     "1"
@@ -57411,7 +57440,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -57531,6 +57559,18 @@
                         "Health",
                         "+",
                         "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\tinkerer_sound.wav",
+                        "",
+                        "60 * (SFXVolume/100)",
+                        ""
                       ]
                     }
                   ]
@@ -74236,6 +74276,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Shop",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -75449,6 +75490,18 @@
                         "+",
                         "3"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\tinkerer_sound.wav",
+                        "",
+                        "60 * (SFXVolume/100)",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -75465,6 +75518,18 @@
                         "Gold",
                         "+",
                         "1 + NumMerchants"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\coin_sound.mp3",
+                        "",
+                        "60 * (SFXVolume/100)",
+                        ""
                       ]
                     }
                   ]
@@ -91314,7 +91379,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ticks / Combat",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -92891,6 +92955,18 @@
                         "-",
                         "10"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\laser.wav",
+                        "",
+                        "60 * (SFXVolume/100)",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -94011,6 +94087,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Shop",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -95335,6 +95412,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -95455,6 +95533,18 @@
                         "+",
                         "3"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\tinkerer_sound.wav",
+                        "",
+                        "60 * (SFXVolume/100)",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -95471,6 +95561,18 @@
                         "Gold",
                         "+",
                         "1 + NumMerchants"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\coin_sound.mp3",
+                        "",
+                        "60 * (SFXVolume/100)",
+                        ""
                       ]
                     }
                   ]
@@ -111919,7 +112021,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Ticks / Combat",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -114407,6 +114508,18 @@
                         "-",
                         "10"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\laser.wav",
+                        "",
+                        "60 * (SFXVolume/100)",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -115586,6 +115699,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Shop",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -117183,6 +117297,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -117303,6 +117418,18 @@
                         "+",
                         "3"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\tinkerer_sound.wav",
+                        "",
+                        "60 * (SFXVolume/100)",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -117319,6 +117446,18 @@
                         "Gold",
                         "+",
                         "1 + NumMerchants"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\coin_sound.mp3",
+                        "",
+                        "60 * (SFXVolume/100)",
+                        ""
                       ]
                     }
                   ]
@@ -119582,6 +119721,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "TESTING/DEBUG",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
