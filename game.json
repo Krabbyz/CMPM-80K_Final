@@ -1125,6 +1125,26 @@
         "name": "assets\\Enemy Units\\80K Final - Basic Ranged Enemy 2 - Idle.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/final_battle_music.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\final_battle_music.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/necromancer_summon.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\necromancer_summon.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -102463,7 +102483,7 @@
             {
               "name": "AttackNoise",
               "type": "number",
-              "value": 0
+              "value": 1
             }
           ],
           "effects": [],
@@ -110771,7 +110791,7 @@
               },
               "parameters": [
                 "",
-                "assets\\battle_music_loop.wav",
+                "assets\\final_battle_music.wav",
                 "1",
                 "yes",
                 "50 * (MusicVolume/100)",
@@ -112892,6 +112912,18 @@
                                 "True",
                                 "1"
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\necromancer_summon.wav",
+                                "",
+                                "SFXVolume",
+                                ""
+                              ]
                             }
                           ]
                         },
@@ -113000,6 +113032,18 @@
                                 "AttackUsed",
                                 "True",
                                 "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\necromancer_summon.wav",
+                                "",
+                                "SFXVolume",
+                                ""
                               ]
                             }
                           ]
@@ -113121,6 +113165,18 @@
                                 "AttackUsed",
                                 "True",
                                 "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\necromancer_summon.wav",
+                                "",
+                                "SFXVolume",
+                                ""
                               ]
                             }
                           ]
@@ -113255,6 +113311,18 @@
                                 "True",
                                 "1"
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\necromancer_summon.wav",
+                                "",
+                                "SFXVolume",
+                                ""
+                              ]
                             }
                           ]
                         },
@@ -113375,6 +113443,18 @@
                                 "AttackUsed",
                                 "True",
                                 "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\necromancer_summon.wav",
+                                "",
+                                "SFXVolume",
+                                ""
                               ]
                             }
                           ]
