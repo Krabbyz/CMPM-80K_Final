@@ -8585,16 +8585,6 @@
                 "50 * (MusicVolume/100)",
                 "1"
               ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "LevelsWon",
-                "=",
-                "4"
-              ]
             }
           ],
           "events": [
@@ -99220,7 +99210,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6672773998330307,
+        "zoomFactor": 0.5843784410741221,
         "windowMask": false
       },
       "objectsGroups": [
@@ -120720,7 +120710,7 @@
           "isLocked": false,
           "name": "UI Layer",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
