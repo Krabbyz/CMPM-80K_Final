@@ -1085,6 +1085,38 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Enemy Units/80K Final - Bomber Enemy - Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Enemy Units\\80K Final - Bomber Enemy - Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy Units/80K Final - Healer Enemy - Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Enemy Units\\80K Final - Healer Enemy - Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy Units/80K Final - Necromancer Enemy - Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Enemy Units\\80K Final - Necromancer Enemy - Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ally Units/80K Final - Leader - Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ally Units\\80K Final - Leader - Idle.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -52443,7 +52475,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Enemy_Bomber.png",
+                      "image": "assets\\Enemy Units\\80K Final - Bomber Enemy - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -52459,20 +52491,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 60,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 60,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 3,
+                            "y": 63
                           }
                         ]
                       ]
@@ -70041,7 +70073,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Enemy_Bomber.png",
+                      "image": "assets\\Enemy Units\\80K Final - Bomber Enemy - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -70057,20 +70089,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 60,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 60,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 3,
+                            "y": 63
                           }
                         ]
                       ]
@@ -88813,7 +88845,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Enemy_Bomber.png",
+                      "image": "assets\\Enemy Units\\80K Final - Bomber Enemy - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -88829,20 +88861,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 60,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 60,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 3,
+                            "y": 63
                           }
                         ]
                       ]
@@ -88999,7 +89031,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Enemy_Healer.png",
+                      "image": "assets\\Enemy Units\\80K Final - Healer Enemy - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -89015,20 +89047,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 6,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 59,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 59,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 6,
+                            "y": 63
                           }
                         ]
                       ]
@@ -99210,7 +99242,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5843784410741221,
+        "zoomFactor": 0.511778403521043,
         "windowMask": false
       },
       "objectsGroups": [
@@ -108916,7 +108948,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Enemy_Bomber.png",
+                      "image": "assets\\Enemy Units\\80K Final - Bomber Enemy - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -108932,20 +108964,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 60,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 60,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 3,
+                            "y": 63
                           }
                         ]
                       ]
@@ -109112,7 +109144,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Enemy_Healer.png",
+                      "image": "assets\\Enemy Units\\80K Final - Healer Enemy - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -109128,20 +109160,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 6,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 59,
+                            "y": 3
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 59,
+                            "y": 63
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 6,
+                            "y": 63
                           }
                         ]
                       ]
@@ -109831,6 +109863,58 @@
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Ally Units\\80K Final - Leader - Idle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 32
+                          },
+                          {
+                            "x": 12,
+                            "y": 12
+                          },
+                          {
+                            "x": 32,
+                            "y": 3
+                          },
+                          {
+                            "x": 52,
+                            "y": 12
+                          },
+                          {
+                            "x": 61,
+                            "y": 32
+                          },
+                          {
+                            "x": 52,
+                            "y": 52
+                          },
+                          {
+                            "x": 32,
+                            "y": 61
+                          },
+                          {
+                            "x": 12,
+                            "y": 52
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -109858,7 +109942,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Leader.png",
+                      "image": "assets\\Ally Units\\80K Final - Leader - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -109874,20 +109958,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 4
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 57,
+                            "y": 4
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 57,
+                            "y": 62
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 3,
+                            "y": 62
                           }
                         ]
                       ]
@@ -110144,7 +110228,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Enemy_Necromancer.png",
+                      "image": "assets\\Enemy Units\\80K Final - Necromancer Enemy - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -110160,19 +110244,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 1,
+                            "y": 1
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 62,
+                            "y": 1
                           },
                           {
-                            "x": 64,
+                            "x": 62,
                             "y": 64
                           },
                           {
-                            "x": 0,
+                            "x": 1,
                             "y": 64
                           }
                         ]
