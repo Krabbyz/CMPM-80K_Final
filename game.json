@@ -109814,58 +109814,6 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Ally_Leader.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 3,
-                            "y": 32
-                          },
-                          {
-                            "x": 12,
-                            "y": 12
-                          },
-                          {
-                            "x": 32,
-                            "y": 3
-                          },
-                          {
-                            "x": 52,
-                            "y": 12
-                          },
-                          {
-                            "x": 61,
-                            "y": 32
-                          },
-                          {
-                            "x": 52,
-                            "y": 52
-                          },
-                          {
-                            "x": 32,
-                            "y": 61
-                          },
-                          {
-                            "x": 12,
-                            "y": 52
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
                       "image": "assets\\Ally Units\\80K Final - Leader - Idle.png",
                       "points": [],
                       "originPoint": {
@@ -114675,7 +114623,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Resource Bars / Ranges",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -117371,7 +117318,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Waves",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
