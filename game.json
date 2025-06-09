@@ -1117,6 +1117,14 @@
         "name": "assets\\Ally Units\\80K Final - Leader - Idle.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Enemy Units/80K Final - Basic Ranged Enemy 2 - Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Enemy Units\\80K Final - Basic Ranged Enemy 2 - Idle.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -70259,7 +70267,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\80K Final - Basic Ranged Enemy - Idle.png",
+                      "image": "assets\\Enemy Units\\80K Final - Basic Ranged Enemy 2 - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -89162,7 +89170,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\80K Final - Basic Ranged Enemy - Idle.png",
+                      "image": "assets\\Enemy Units\\80K Final - Basic Ranged Enemy 2 - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -109285,7 +109293,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\80K Final - Basic Ranged Enemy - Idle.png",
+                      "image": "assets\\Enemy Units\\80K Final - Basic Ranged Enemy 2 - Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
